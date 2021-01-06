@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Hotel">
+  <DataContextMoniker Name="/HotelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cf2dffc2-baf1-40a1-84fc-8d33d1c39809" isExpanded="false" absoluteBounds="3.375, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/chitietdatphong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a226afd-6b2d-4e41-b2c4-9af89e2b4806" absoluteBounds="3.39, 2.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc3742f5-3a90-4be5-be7b-c46a407a96c4" isExpanded="false" absoluteBounds="1.125, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/chitietthuephong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bacbe063-2981-4d44-900c-fa6a3cf834f4" absoluteBounds="1.1400000000000001, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56b31e52-5643-4a68-a005-9c7998f2f8ce" isExpanded="false" absoluteBounds="5.625, 2, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/chitietvattu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d0d44c78-9f21-4cb9-80d3-77fd655934f0" absoluteBounds="5.64, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d3694a4-fa84-44c1-8c77-b9f4fe829bad" isExpanded="false" absoluteBounds="0.5, 1.625, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/dichvu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbaaedf9-661c-4acb-b615-f76f51113dc2" absoluteBounds="0.51499999999999968, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.8125 : 2.075); (1.8125 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/dichvu/dichvu_chitietthuephong" />
+      <nodes>
+        <classShapeMoniker Id="9d3694a4-fa84-44c1-8c77-b9f4fe829bad" />
+        <classShapeMoniker Id="cc3742f5-3a90-4be5-be7b-c46a407a96c4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f0532460-9a30-4bd5-b34d-a814b00c9cdc" isExpanded="false" absoluteBounds="5.75, 4.625, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/hethong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="392b6279-4216-4cf6-a099-97ba7d9cd173" absoluteBounds="5.7650000000000006, 5.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0cf9828-9219-445a-aaed-ed4eb07decfe" isExpanded="false" absoluteBounds="2.875, 5.5, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/hoadon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fc2c4b9-7d5a-4a7a-960d-fa09f808729a" absoluteBounds="2.89, 5.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 5.075); (4.875 : 5.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HotelDataContext/hethong/hethong_hoadon" />
+      <nodes>
+        <classShapeMoniker Id="f0532460-9a30-4bd5-b34d-a814b00c9cdc" />
+        <classShapeMoniker Id="d0cf9828-9219-445a-aaed-ed4eb07decfe" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="255e1185-abea-43b6-81e4-4a7535c6b0a0" isExpanded="false" absoluteBounds="0.5, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/khachhang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5f14e40-2874-4d92-b625-9d89ad9980cb" absoluteBounds="0.51500000000000012, 5.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 5.325); (2.875 : 5.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HotelDataContext/khachhang/khachhang_hoadon" />
+      <nodes>
+        <classShapeMoniker Id="255e1185-abea-43b6-81e4-4a7535c6b0a0" />
+        <classShapeMoniker Id="d0cf9828-9219-445a-aaed-ed4eb07decfe" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4ad8f520-e681-496a-b773-a59c55868285" isExpanded="false" absoluteBounds="3.375, 0.625, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/phong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f75a035-8480-469d-a632-fb0060e2ee7c" absoluteBounds="3.39, 1.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.07812625 : 1.075); (4.07812625 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/phong/phong_chitietdatphong" />
+      <nodes>
+        <classShapeMoniker Id="4ad8f520-e681-496a-b773-a59c55868285" />
+        <classShapeMoniker Id="cf2dffc2-baf1-40a1-84fc-8d33d1c39809" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.492189375 : 1.075); (4.492189375 : 2.3125); (3.3125 : 2.3125); (3.3125 : 2.6); (3.125 : 2.6)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/phong/phong_chitietthuephong" />
+      <nodes>
+        <classShapeMoniker Id="4ad8f520-e681-496a-b773-a59c55868285" />
+        <classShapeMoniker Id="cc3742f5-3a90-4be5-be7b-c46a407a96c4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ac4b5de2-7733-4522-9575-e590bd2f8921" isExpanded="false" absoluteBounds="6.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/loaiphong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67e47694-f130-43ff-9ebb-450083fc1dca" absoluteBounds="6.515, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.0625 : 1.575); (7.0625 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/loaiphong/loaiphong_chitietvattu" />
+      <nodes>
+        <classShapeMoniker Id="ac4b5de2-7733-4522-9575-e590bd2f8921" />
+        <classShapeMoniker Id="56b31e52-5643-4a68-a005-9c7998f2f8ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 1.35); (4.9648471875 : 1.35); (4.9648471875 : 1.075)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/loaiphong/loaiphong_phong" />
+      <nodes>
+        <classShapeMoniker Id="ac4b5de2-7733-4522-9575-e590bd2f8921" />
+        <classShapeMoniker Id="4ad8f520-e681-496a-b773-a59c55868285" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="416f0d8b-d26e-4110-8e2d-19e00dc01ce5" isExpanded="false" absoluteBounds="5.75, 3.75, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/nhanvien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7f25f05-5e97-470f-9ae9-d5a05da7a831" absoluteBounds="5.7650000000000006, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 4.2); (6.75 : 4.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/nhanvien/nhanvien_hethong" />
+      <nodes>
+        <classShapeMoniker Id="416f0d8b-d26e-4110-8e2d-19e00dc01ce5" />
+        <classShapeMoniker Id="f0532460-9a30-4bd5-b34d-a814b00c9cdc" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="264a3597-cf5c-40dd-8e69-7ccf27e07883" isExpanded="false" absoluteBounds="3.25, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/phieudatphong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dde59bcd-0e6a-45e9-8393-e208f76b5def" absoluteBounds="3.265, 3.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.3125 : 3.375); (4.3125 : 2.825)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/phieudatphong/phieudatphong_chitietdatphong" />
+      <nodes>
+        <classShapeMoniker Id="264a3597-cf5c-40dd-8e69-7ccf27e07883" />
+        <classShapeMoniker Id="cf2dffc2-baf1-40a1-84fc-8d33d1c39809" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 5.0687475); (3.77604541666667 : 5.0687475 : JumpStart); (3.94271208333333 : 5.0687475 : JumpEnd); (4.7812525 : 5.0687475); (4.7812525 : 3.825)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/khachhang/khachhang_phieudatphong" />
+      <nodes>
+        <classShapeMoniker Id="255e1185-abea-43b6-81e4-4a7535c6b0a0" />
+        <classShapeMoniker Id="264a3597-cf5c-40dd-8e69-7ccf27e07883" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d366beda-bf93-45ae-8b90-58aa8b4edefe" isExpanded="false" absoluteBounds="0.5, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/phieuthuephong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e9f6754-8af5-40cf-bb23-b229e7019987" absoluteBounds="0.51500000000000012, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.8125 : 3.375); (1.8125 : 2.825)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/phieuthuephong/phieuthuephong_chitietthuephong" />
+      <nodes>
+        <classShapeMoniker Id="d366beda-bf93-45ae-8b90-58aa8b4edefe" />
+        <classShapeMoniker Id="cc3742f5-3a90-4be5-be7b-c46a407a96c4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 3.6); (3 : 3.6); (3 : 4.075); (3.85937875 : 4.075); (3.85937875 : 5.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/phieuthuephong/phieuthuephong_hoadon" />
+      <nodes>
+        <classShapeMoniker Id="d366beda-bf93-45ae-8b90-58aa8b4edefe" />
+        <classShapeMoniker Id="d0cf9828-9219-445a-aaed-ed4eb07decfe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 4.625); (4.86458583333333 : 4.625 : JumpStart); (4.69791916666667 : 4.625 : JumpEnd); (3.94271208333333 : 4.625 : JumpStart); (3.77604541666667 : 4.625 : JumpEnd); (2.5 : 4.625); (2.5 : 3.825)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HotelDataContext/hethong/hethong_phieuthuephong" />
+      <nodes>
+        <classShapeMoniker Id="f0532460-9a30-4bd5-b34d-a814b00c9cdc" />
+        <classShapeMoniker Id="d366beda-bf93-45ae-8b90-58aa8b4edefe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.25 : 3.425); (2.5 : 3.425)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/phieudatphong/phieudatphong_phieuthuephong" />
+      <nodes>
+        <classShapeMoniker Id="264a3597-cf5c-40dd-8e69-7ccf27e07883" />
+        <classShapeMoniker Id="d366beda-bf93-45ae-8b90-58aa8b4edefe" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="756c58fa-2b38-4dea-9e20-1b0e2417be94" isExpanded="false" absoluteBounds="0.5, 0.625, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/trangthaiphong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a94deeec-f336-4eb6-aab5-1a16d2e85b3a" absoluteBounds="0.51500000000000012, 1.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.375 : 0.85); (2.5 : 0.85)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/phong/phong_trangthaiphong" />
+      <nodes>
+        <classShapeMoniker Id="4ad8f520-e681-496a-b773-a59c55868285" />
+        <classShapeMoniker Id="756c58fa-2b38-4dea-9e20-1b0e2417be94" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9dfd21d8-4eab-407c-a740-c8c8be9b0ba8" isExpanded="false" absoluteBounds="5.625, 2.875, 2, 0.45">
+      <DataClassMoniker Name="/HotelDataContext/vattu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93aad6ea-3b72-457f-ae29-ee463b381eca" absoluteBounds="5.64, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.625 : 2.875); (6.625 : 2.45)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HotelDataContext/vattu/vattu_chitietvattu" />
+      <nodes>
+        <classShapeMoniker Id="9dfd21d8-4eab-407c-a740-c8c8be9b0ba8" />
+        <classShapeMoniker Id="56b31e52-5643-4a68-a005-9c7998f2f8ce" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
