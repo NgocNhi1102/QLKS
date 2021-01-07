@@ -56,6 +56,7 @@ namespace QLKS
             this.TKDATPHONGtoolStripMenuItem20 = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labUser = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -133,31 +134,31 @@ namespace QLKS
             // PHONGtoolStripMenuItem10
             // 
             this.PHONGtoolStripMenuItem10.Name = "PHONGtoolStripMenuItem10";
-            this.PHONGtoolStripMenuItem10.Size = new System.Drawing.Size(185, 26);
+            this.PHONGtoolStripMenuItem10.Size = new System.Drawing.Size(224, 26);
             this.PHONGtoolStripMenuItem10.Text = "PHÒNG";
             // 
             // VATTUtoolStripMenuItem11
             // 
             this.VATTUtoolStripMenuItem11.Name = "VATTUtoolStripMenuItem11";
-            this.VATTUtoolStripMenuItem11.Size = new System.Drawing.Size(185, 26);
+            this.VATTUtoolStripMenuItem11.Size = new System.Drawing.Size(224, 26);
             this.VATTUtoolStripMenuItem11.Text = "VẬT TƯ";
             // 
             // DICHVUtoolStripMenuItem12
             // 
             this.DICHVUtoolStripMenuItem12.Name = "DICHVUtoolStripMenuItem12";
-            this.DICHVUtoolStripMenuItem12.Size = new System.Drawing.Size(185, 26);
+            this.DICHVUtoolStripMenuItem12.Size = new System.Drawing.Size(224, 26);
             this.DICHVUtoolStripMenuItem12.Text = "DỊCH VỤ";
             // 
             // NHANVIENtoolStripMenuItem13
             // 
             this.NHANVIENtoolStripMenuItem13.Name = "NHANVIENtoolStripMenuItem13";
-            this.NHANVIENtoolStripMenuItem13.Size = new System.Drawing.Size(185, 26);
+            this.NHANVIENtoolStripMenuItem13.Size = new System.Drawing.Size(224, 26);
             this.NHANVIENtoolStripMenuItem13.Text = "NHÂN VIÊN";
             // 
             // NGUOIDUNGtoolStripMenuItem14
             // 
             this.NGUOIDUNGtoolStripMenuItem14.Name = "NGUOIDUNGtoolStripMenuItem14";
-            this.NGUOIDUNGtoolStripMenuItem14.Size = new System.Drawing.Size(185, 26);
+            this.NGUOIDUNGtoolStripMenuItem14.Size = new System.Drawing.Size(224, 26);
             this.NGUOIDUNGtoolStripMenuItem14.Text = "NGƯỜI DÙNG";
             // 
             // toolStripMenuItem3
@@ -171,7 +172,7 @@ namespace QLKS
             // TTKHACHHANGtoolStripMenuItem15
             // 
             this.TTKHACHHANGtoolStripMenuItem15.Name = "TTKHACHHANGtoolStripMenuItem15";
-            this.TTKHACHHANGtoolStripMenuItem15.Size = new System.Drawing.Size(208, 26);
+            this.TTKHACHHANGtoolStripMenuItem15.Size = new System.Drawing.Size(224, 26);
             this.TTKHACHHANGtoolStripMenuItem15.Text = "TT KHÁCH HÀNG";
             // 
             // THUEPHONGtoolStripMenuItem4
@@ -245,11 +246,21 @@ namespace QLKS
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // labUser
+            // 
+            this.labUser.AutoSize = true;
+            this.labUser.Location = new System.Drawing.Point(876, 8);
+            this.labUser.Name = "labUser";
+            this.labUser.Size = new System.Drawing.Size(33, 17);
+            this.labUser.TabIndex = 3;
+            this.labUser.Text = "-----";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1118, 638);
+            this.Controls.Add(this.labUser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -291,6 +302,7 @@ namespace QLKS
         private System.Windows.Forms.ToolStripMenuItem TKDATPHONGtoolStripMenuItem20;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labUser;
     }
 }
 

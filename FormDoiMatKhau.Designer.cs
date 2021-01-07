@@ -41,6 +41,8 @@ namespace QLKS
             this.txtMKMoiAgain = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loi = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.labUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loi)).BeginInit();
             this.SuspendLayout();
@@ -50,9 +52,9 @@ namespace QLKS
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(246, 67);
+            this.label1.Location = new System.Drawing.Point(243, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 34);
+            this.label1.Size = new System.Drawing.Size(243, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "ĐỔI MẬT KHẨU";
             // 
@@ -147,11 +149,34 @@ namespace QLKS
             // 
             this.loi.ContainerControl = this;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(125, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(147, 18);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "TÊN ĐĂNG NHẬP:";
+            // 
+            // labUser
+            // 
+            this.labUser.AutoSize = true;
+            this.labUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labUser.Location = new System.Drawing.Point(346, 94);
+            this.labUser.Name = "labUser";
+            this.labUser.Size = new System.Drawing.Size(13, 17);
+            this.labUser.TabIndex = 11;
+            this.labUser.Text = "-";
+            // 
             // FormDoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labUser);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtMKMoiAgain);
             this.Controls.Add(this.txtMKMoi);
             this.Controls.Add(this.txtMKC);
@@ -185,5 +210,7 @@ namespace QLKS
         private System.Windows.Forms.TextBox txtMKMoi;
         private System.Windows.Forms.TextBox txtMKMoiAgain;
         private System.Windows.Forms.ErrorProvider loi;
+        private System.Windows.Forms.Label labUser;
+        private System.Windows.Forms.Label label5;
     }
 }
