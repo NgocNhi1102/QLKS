@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using DTO;
 namespace DAO
 {
-    class PhieuDatPhongDAO
+    public class PhieuDatPhongDAO
     {
         HotelDataContext htDataContext = new HotelDataContext();
 

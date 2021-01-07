@@ -8,7 +8,7 @@ using DTO;
 
 namespace DAO
 {
-    public class HoadonDAO
+    public class HoaDonDAO
     {
         HotelDataContext htDataContext = new HotelDataContext();
 

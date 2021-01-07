@@ -8,7 +8,7 @@ using DTO;
 
 namespace DAO
 {
-    public class PhongDaO
+    public class PhongDAO
     {
         HotelDataContext htDataContext = new HotelDataContext();
 
