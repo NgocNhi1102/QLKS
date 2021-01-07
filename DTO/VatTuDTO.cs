@@ -8,56 +8,30 @@ namespace DTO
 {
     public class VatTuDTO
     {
-        private string m_username;
-        private string m_tenNV;
-        private string m_chucvu;
-        private string m_maNV;
+        private string m_mavattu;
+        private string m_tenvattu;
 
-        public string Username
+        public string Mavattu
         {
             get
             {
-                return m_username;
+                return m_mavattu;
             }
             set
             {
-                m_username = value;
+                m_mavattu = value;
             }
         }
 
-        public string TenNV
+        public string Tenvattu
         {
             get
             {
-                return m_tenNV;
+                return m_tenvattu;
             }
             set
             {
-                m_tenNV = value;
-            }
-        }
-
-        public string MaNV
-        {
-            get
-            {
-                return m_maNV;
-            }
-            set
-            {
-                m_maNV = value;
-            }
-        }
-
-        public string ChucVu
-        {
-            get
-            {
-                return m_chucvu;
-            }
-            set
-            {
-                m_chucvu = value;
+                m_tenvattu = value;
             }
         }
 

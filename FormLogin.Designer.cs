@@ -67,7 +67,7 @@ namespace QLKS
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(127, 13);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(130, 10);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(204, 27);
             this.txtTenDangNhap.TabIndex = 1;
