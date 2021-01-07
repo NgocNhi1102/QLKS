@@ -29,6 +29,7 @@ namespace QLKS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,7 +40,9 @@ namespace QLKS
             this.txtMKMoi = new System.Windows.Forms.TextBox();
             this.txtMKMoiAgain = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loi = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loi)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -140,6 +143,10 @@ namespace QLKS
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // loi
+            // 
+            this.loi.ContainerControl = this;
+            // 
             // FormDoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -157,7 +164,9 @@ namespace QLKS
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormDoiMatKhau";
             this.Text = "FormDoiMatKhau";
+            this.Load += new System.EventHandler(this.FormDoiMatKhau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +184,6 @@ namespace QLKS
         private System.Windows.Forms.TextBox txtMKC;
         private System.Windows.Forms.TextBox txtMKMoi;
         private System.Windows.Forms.TextBox txtMKMoiAgain;
+        private System.Windows.Forms.ErrorProvider loi;
     }
 }

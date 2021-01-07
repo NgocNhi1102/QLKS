@@ -41,7 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietDatPhongDTO.cs" />
+    <Compile Include="ChiTietThuePhongDTO.cs" />
+    <Compile Include="ChiTietVatTuDTO.cs" />
+    <Compile Include="DichVuDTO.cs" />
+    <Compile Include="HeThongDTO.cs" />
+    <Compile Include="HoaDonDTO.cs" />
+    <Compile Include="KhachHangDTO.cs" />
+    <Compile Include="KiemTraPhongDTO.cs" />
+    <Compile Include="LoaiPhongDTO.cs" />
+    <Compile Include="LoginDTO.cs" />
+    <Compile Include="NhanVienDTO.cs" />
+    <Compile Include="PhieuDatPhongDTO.cs" />
+    <Compile Include="PhieuThuePhongDTO.cs" />
+    <Compile Include="PhongDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VatTuDTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

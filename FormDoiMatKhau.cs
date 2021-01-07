@@ -16,5 +16,10 @@ namespace QLKS
         {
             InitializeComponent();
         }
+
+        private void FormDoiMatKhau_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

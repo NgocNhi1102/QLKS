@@ -71,7 +71,7 @@ namespace QLKS
             this.BAOCAOtoolStripMenuItem5});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1118, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1118, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,36 +84,38 @@ namespace QLKS
             this.toolStripSeparator1,
             this.THOATtoolStripMenuItem9});
             this.HETHONGtoolStripMenuItem1.Name = "HETHONGtoolStripMenuItem1";
-            this.HETHONGtoolStripMenuItem1.Size = new System.Drawing.Size(97, 26);
+            this.HETHONGtoolStripMenuItem1.Size = new System.Drawing.Size(97, 24);
             this.HETHONGtoolStripMenuItem1.Text = "HỆ THỐNG";
+            this.HETHONGtoolStripMenuItem1.Click += new System.EventHandler(this.HETHONGtoolStripMenuItem1_Click);
             // 
             // DANGNHAPtoolStripMenuItem6
             // 
             this.DANGNHAPtoolStripMenuItem6.Name = "DANGNHAPtoolStripMenuItem6";
-            this.DANGNHAPtoolStripMenuItem6.Size = new System.Drawing.Size(197, 26);
+            this.DANGNHAPtoolStripMenuItem6.Size = new System.Drawing.Size(224, 26);
             this.DANGNHAPtoolStripMenuItem6.Text = "ĐĂNG NHẬP";
             // 
             // DANGXUATtoolStripMenuItem7
             // 
             this.DANGXUATtoolStripMenuItem7.Name = "DANGXUATtoolStripMenuItem7";
-            this.DANGXUATtoolStripMenuItem7.Size = new System.Drawing.Size(197, 26);
+            this.DANGXUATtoolStripMenuItem7.Size = new System.Drawing.Size(224, 26);
             this.DANGXUATtoolStripMenuItem7.Text = "ĐĂNG XUẤT";
             // 
             // DOIMATKHAUtoolStripMenuItem8
             // 
             this.DOIMATKHAUtoolStripMenuItem8.Name = "DOIMATKHAUtoolStripMenuItem8";
-            this.DOIMATKHAUtoolStripMenuItem8.Size = new System.Drawing.Size(197, 26);
+            this.DOIMATKHAUtoolStripMenuItem8.Size = new System.Drawing.Size(224, 26);
             this.DOIMATKHAUtoolStripMenuItem8.Text = "ĐỔI MẬT KHẨU";
+            this.DOIMATKHAUtoolStripMenuItem8.Click += new System.EventHandler(this.DOIMATKHAUtoolStripMenuItem8_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(194, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // THOATtoolStripMenuItem9
             // 
             this.THOATtoolStripMenuItem9.Name = "THOATtoolStripMenuItem9";
-            this.THOATtoolStripMenuItem9.Size = new System.Drawing.Size(197, 26);
+            this.THOATtoolStripMenuItem9.Size = new System.Drawing.Size(224, 26);
             this.THOATtoolStripMenuItem9.Text = "THOÁT";
             // 
             // QUANLYtoolStripMenuItem2
@@ -125,7 +127,7 @@ namespace QLKS
             this.NHANVIENtoolStripMenuItem13,
             this.NGUOIDUNGtoolStripMenuItem14});
             this.QUANLYtoolStripMenuItem2.Name = "QUANLYtoolStripMenuItem2";
-            this.QUANLYtoolStripMenuItem2.Size = new System.Drawing.Size(83, 26);
+            this.QUANLYtoolStripMenuItem2.Size = new System.Drawing.Size(83, 24);
             this.QUANLYtoolStripMenuItem2.Text = "QUẢN LÝ";
             // 
             // PHONGtoolStripMenuItem10
@@ -163,7 +165,7 @@ namespace QLKS
             this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TTKHACHHANGtoolStripMenuItem15});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(119, 26);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(119, 24);
             this.toolStripMenuItem3.Text = "KHÁCH HÀNG";
             // 
             // TTKHACHHANGtoolStripMenuItem15
@@ -180,7 +182,7 @@ namespace QLKS
             this.toolStripSeparator2,
             this.HOADONtoolStripMenuItem18});
             this.THUEPHONGtoolStripMenuItem4.Name = "THUEPHONGtoolStripMenuItem4";
-            this.THUEPHONGtoolStripMenuItem4.Size = new System.Drawing.Size(115, 26);
+            this.THUEPHONGtoolStripMenuItem4.Size = new System.Drawing.Size(115, 24);
             this.THUEPHONGtoolStripMenuItem4.Text = "THUÊ PHÒNG";
             // 
             // PHIEUDATPHONGtoolStripMenuItem16
@@ -212,7 +214,7 @@ namespace QLKS
             this.VATTUtoolStripMenuItem19,
             this.TKDATPHONGtoolStripMenuItem20});
             this.BAOCAOtoolStripMenuItem5.Name = "BAOCAOtoolStripMenuItem5";
-            this.BAOCAOtoolStripMenuItem5.Size = new System.Drawing.Size(87, 26);
+            this.BAOCAOtoolStripMenuItem5.Size = new System.Drawing.Size(87, 24);
             this.BAOCAOtoolStripMenuItem5.Text = "BÁO CÁO";
             // 
             // VATTUtoolStripMenuItem19
