@@ -14,6 +14,10 @@ namespace QLKS
     public partial class FormMain : Form
     {
         public FormLogin frmLogin;
+        public FormPhong frmPhong;
+
+
+
         public int CountList = 5;
         public string m_chucvu = "";
         public string m_username = "";
@@ -196,6 +200,13 @@ namespace QLKS
             if (num == false)
                 e.Handled = true;
             num = true;
+        }
+
+        private void PHONGtoolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            frmPhong = new FormPhong();
+            frmPhong.frmMain = this;
+            frmPhong.ShowDialog();
         }
     }
 }
