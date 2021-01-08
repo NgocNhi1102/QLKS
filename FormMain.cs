@@ -147,5 +147,55 @@ namespace QLKS
             MainNoEnabled();
             MessageBox.Show("Bạn vừa đăng xuất thành công!");
         }
+        public void KTChiChu(object o, KeyEventArgs e, TextBox txt, ErrorProvider loi)
+        {
+            if ((e.KeyCode < Keys.A || e.KeyCode > Keys.Z) && (e.KeyCode != Keys.Back) && (e.KeyCode != Keys.Delete) && (e.KeyCode != Keys.ShiftKey) && (e.KeyCode != Keys.Space) && (e.KeyCode != Keys.Enter) && (e.KeyCode != Keys.Control))
+            {
+                if (e.KeyCode < Keys.A || e.KeyCode > Keys.Z)
+                {
+                    loi.SetError(txt, "Tên không được nhập số!");
+                    num = true;
+                }
+                else
+                {
+                    loi.SetError(txt, "");
+                }
+            }
+            else
+            {
+                loi.SetError(txt, "");
+            }
+        }
+        public void KoNhapSo(object o, KeyPressEventArgs e)
+        {
+            if (num == true)
+                e.Handled = true;
+            num = false;
+        }
+        public void KTChiSo(object o, KeyEventArgs e, TextBox txt, ErrorProvider loi)
+        {
+            if ((e.KeyCode < Keys.D0 || e.KeyCode > Keys.D9) && (e.KeyCode < Keys.NumPad0 || e.KeyCode > Keys.NumPad0) && (e.KeyCode != Keys.Back) && (e.KeyCode != Keys.Delete) && (e.KeyCode != Keys.Enter) && (e.KeyCode != Keys.Control))
+            {
+                if ((e.KeyCode < Keys.D0 || e.KeyCode > Keys.D9) && (e.KeyCode < Keys.NumPad0 || e.KeyCode > Keys.NumPad0))
+                {
+                    loi.SetError(txt, "Không được nhập chữ!");
+                    num = false;
+                }
+                else
+                {
+                    loi.SetError(txt, "");
+                }
+            }
+            else
+            {
+                loi.SetError(txt, "");
+            }
+        }
+        public void KoNhapChu(object o, KeyPressEventArgs e)
+        {
+            if (num == false)
+                e.Handled = true;
+            num = true;
+        }
     }
 }
