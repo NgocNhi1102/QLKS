@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDichVu.Designer.cs">
+      <DependentUpon>FormDichVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDichVu.resx">
+      <DependentUpon>FormDichVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDoiMatKhau.resx">
       <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\h3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h31.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
