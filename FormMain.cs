@@ -208,5 +208,12 @@ namespace QLKS
             frmPhong.frmMain = this;
             frmPhong.ShowDialog();
         }
+
+        private void VATTUtoolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            FormVatTu frmVT = new FormVatTu();
+            frmVT.frmMain = this;
+            frmVT.ShowDialog();
+        }
     }
 }
