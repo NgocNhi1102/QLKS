@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,7 +13,13 @@ namespace QLKS
 {
     public partial class FormMain : Form
     {
-        public FormMain frmMain;
+        public FormLogin frmLogin;
+        public int CountList = 5;
+        public string m_chucvu = "";
+        public string m_username = "";
+        public string m_maNV = "";
+
+        private bool num;
         public FormMain()
         {
             InitializeComponent();
@@ -20,7 +27,28 @@ namespace QLKS
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            
+            MainNoEnabled();
+            frmLogin = new FormLogin();
+            frmLogin.frmMain = this;
+            frmLogin.ShowDialog();
+            if (m_username == "")
+            {
+                Application.Exit();
+            }
+            if (m_chucvu == "admin")
+            {
+                MainEnabled();
+            }
+            else if (m_chucvu == "Quản lý")
+            {
+                MainEnQuanLy();
+            }
+            else
+            {
+                MainEnNhanVien();
+            }
+            labUser.Text = "Hi! " + m_username;
+            //capnhatphong();
         }
 
         private void DOIMATKHAUtoolStripMenuItem8_Click(object sender, EventArgs e)
@@ -31,6 +59,93 @@ namespace QLKS
         private void HETHONGtoolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void DANGNHAPtoolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            frmLogin = new FormLogin();
+            frmLogin.frmMain = this;
+            frmLogin.ShowDialog();
+            if (m_chucvu == "admin")
+            {
+                MainEnabled();
+            }
+            else if (m_chucvu == "Quản lý")
+            {
+                MainEnQuanLy();
+            }
+            else
+            {
+                MainEnNhanVien();
+            }
+        }
+        private void MainEnNhanVien()
+        {
+            QUANLYtoolStripMenuItem2.Enabled = false;
+            DOIMATKHAUtoolStripMenuItem8.Enabled = true;
+           // KHACHHANGtoolStripMenuItem3.Enabled = true;
+            THUEPHONGtoolStripMenuItem4.Enabled = true;
+            BAOCAOtoolStripMenuItem5.Enabled = false;
+            DANGXUATtoolStripMenuItem7.Enabled = true;
+        }
+
+        private void MainEnQuanLy()
+        {
+            QUANLYtoolStripMenuItem2.Enabled = true;
+            DOIMATKHAUtoolStripMenuItem8.Enabled = true;
+           // KHACHHANGtoolStripMenuItem3.Enabled = true;
+            THUEPHONGtoolStripMenuItem4.Enabled = true;
+            BAOCAOtoolStripMenuItem5.Enabled = true;
+            DANGXUATtoolStripMenuItem7.Enabled = true;
+        }
+
+        private void MainEnabled()
+        {
+            QUANLYtoolStripMenuItem2.Enabled = true;
+            DOIMATKHAUtoolStripMenuItem8.Enabled = true;
+           // KHACHHANGtoolStripMenuItem3.Enabled = true;
+            //THUEPHONGtoolStripMenuItem4.Enabled = true;
+           // BAOCAOtoolStripMenuItem5.Enabled = true;
+            DANGXUATtoolStripMenuItem7.Enabled = true;
+        }
+        private void MainNoEnabled()
+        {
+            QUANLYtoolStripMenuItem2.Enabled = false;
+            DOIMATKHAUtoolStripMenuItem8.Enabled = false;
+          //  KHACHHANGtoolStripMenuItem3.Enabled = false;
+            THUEPHONGtoolStripMenuItem4.Enabled = false;
+            BAOCAOtoolStripMenuItem5.Enabled = false;
+            DANGXUATtoolStripMenuItem7.Enabled = false;
+        }
+
+        private void MainNoEnQuanLy(Button bt)
+        {
+            bt.Enabled = false;
+        }
+
+        private void MainNoEnNhanVien()
+        {
+            QUANLYtoolStripMenuItem2.Enabled = false;
+            BAOCAOtoolStripMenuItem5.Enabled = false;
+        }
+        public string MaHoa(string inputString)
+        {
+            UnicodeEncoding u = new UnicodeEncoding();
+            byte[] bytes = u.GetBytes(inputString); //get original string
+            MD5 md = new MD5CryptoServiceProvider(); // using md5 algorithm
+            byte[] result = md.ComputeHash(bytes); // encrypted input bytes into encrypted bytes
+            return Convert.ToBase64String(result); //return encrypted string
+        }
+
+        private void THOATtoolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void DANGXUATtoolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            MainNoEnabled();
+            MessageBox.Show("Bạn vừa đăng xuất thành công!");
         }
     }
 }
