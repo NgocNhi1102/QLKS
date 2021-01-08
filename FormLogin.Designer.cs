@@ -48,7 +48,8 @@ namespace QLKS
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLKS.Properties.Resources.th;
-            this.pictureBox1.Location = new System.Drawing.Point(108, 103);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 84);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(210, 215);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -59,17 +60,19 @@ namespace QLKS
             // 
             this.panel1.Controls.Add(this.txtTenDangNhap);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(372, 103);
+            this.panel1.Location = new System.Drawing.Point(279, 84);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 45);
+            this.panel1.Size = new System.Drawing.Size(250, 37);
             this.panel1.TabIndex = 1;
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(130, 10);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(98, 8);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(204, 27);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(154, 23);
             this.txtTenDangNhap.TabIndex = 1;
             this.txtTenDangNhap.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -78,9 +81,10 @@ namespace QLKS
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 13);
+            this.label1.Location = new System.Drawing.Point(3, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 20);
+            this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "UserName:";
             // 
@@ -88,17 +92,19 @@ namespace QLKS
             // 
             this.panel2.Controls.Add(this.txtMatKhau);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(372, 172);
+            this.panel2.Location = new System.Drawing.Point(279, 140);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(334, 45);
+            this.panel2.Size = new System.Drawing.Size(250, 37);
             this.panel2.TabIndex = 2;
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(127, 11);
+            this.txtMatKhau.Location = new System.Drawing.Point(95, 9);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(204, 27);
+            this.txtMatKhau.Size = new System.Drawing.Size(154, 23);
             this.txtMatKhau.TabIndex = 1;
             // 
             // label2
@@ -106,9 +112,10 @@ namespace QLKS
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 13);
+            this.label2.Location = new System.Drawing.Point(2, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 20);
+            this.label2.Size = new System.Drawing.Size(86, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "PassWord:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -117,18 +124,20 @@ namespace QLKS
             // 
             this.panel3.Controls.Add(this.btn);
             this.panel3.Controls.Add(this.btnDangNhap);
-            this.panel3.Location = new System.Drawing.Point(372, 272);
+            this.panel3.Location = new System.Drawing.Point(279, 221);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(334, 46);
+            this.panel3.Size = new System.Drawing.Size(250, 37);
             this.panel3.TabIndex = 3;
             // 
             // btn
             // 
             this.btn.BackColor = System.Drawing.Color.LightCoral;
             this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn.Location = new System.Drawing.Point(215, 2);
+            this.btn.Location = new System.Drawing.Point(161, 2);
+            this.btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(116, 41);
+            this.btn.Size = new System.Drawing.Size(87, 33);
             this.btn.TabIndex = 1;
             this.btn.Text = "Exit";
             this.btn.UseVisualStyleBackColor = false;
@@ -137,23 +146,25 @@ namespace QLKS
             // 
             this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(7, 3);
+            this.btnDangNhap.Location = new System.Drawing.Point(5, 2);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(127, 40);
+            this.btnDangNhap.Size = new System.Drawing.Size(95, 32);
             this.btnDangNhap.TabIndex = 0;
             this.btnDangNhap.Text = "Login";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormLogin";
             this.Text = "FormLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
