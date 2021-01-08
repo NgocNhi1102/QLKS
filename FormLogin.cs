@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Nothing change
 namespace QLKS
 {
     public partial class FormLogin : Form
