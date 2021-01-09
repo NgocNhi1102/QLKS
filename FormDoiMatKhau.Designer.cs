@@ -100,6 +100,7 @@ namespace QLKS
             this.btnXN.TabIndex = 5;
             this.btnXN.Text = "Xác nhận";
             this.btnXN.UseVisualStyleBackColor = false;
+            this.btnXN.Click += new System.EventHandler(this.btnXN_Click);
             // 
             // btnHuy
             // 
@@ -126,6 +127,7 @@ namespace QLKS
             this.txtMKMoi.Name = "txtMKMoi";
             this.txtMKMoi.Size = new System.Drawing.Size(195, 27);
             this.txtMKMoi.TabIndex = 8;
+            this.txtMKMoi.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMKMoi_KeyUp);
             // 
             // txtMKMoiAgain
             // 
@@ -134,6 +136,7 @@ namespace QLKS
             this.txtMKMoiAgain.Name = "txtMKMoiAgain";
             this.txtMKMoiAgain.Size = new System.Drawing.Size(195, 27);
             this.txtMKMoiAgain.TabIndex = 9;
+            this.txtMKMoiAgain.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMKMoiAgain_KeyUp);
             // 
             // pictureBox1
             // 
