@@ -15,7 +15,8 @@ namespace QLKS
     {
         public FormLogin frmLogin;
         public FormPhong frmPhong;
-
+        public FormDoiMatKhau frmDoimatkhau;
+        public FormNhanVien frmNhanVien;
 
 
         public int CountList = 5;
@@ -57,7 +58,9 @@ namespace QLKS
 
         private void DOIMATKHAUtoolStripMenuItem8_Click(object sender, EventArgs e)
         {
-
+            frmDoimatkhau = new FormDoiMatKhau();
+            frmDoimatkhau.frmMain = this;
+            frmDoimatkhau.ShowDialog();
         }
 
         private void HETHONGtoolStripMenuItem1_Click(object sender, EventArgs e)
@@ -214,6 +217,14 @@ namespace QLKS
             FormVatTu frmVT = new FormVatTu();
             frmVT.frmMain = this;
             frmVT.ShowDialog();
+        }
+
+        private void NHANVIENtoolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+
+            frmNhanVien = new FormNhanVien();
+            frmNhanVien.frmMain = this;
+            frmNhanVien.ShowDialog();
         }
     }
 }

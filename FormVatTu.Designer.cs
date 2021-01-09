@@ -48,6 +48,8 @@ namespace QLKS
             this.txtTenVatTu = new System.Windows.Forms.TextBox();
             this.txtMaVatTu = new System.Windows.Forms.TextBox();
             this.lsvQLVattu = new System.Windows.Forms.ListView();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,8 +57,6 @@ namespace QLKS
             this.btnSuaVT = new System.Windows.Forms.Button();
             this.btnThemVT = new System.Windows.Forms.Button();
             this.loi = new System.Windows.Forms.ErrorProvider(this.components);
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSL)).BeginInit();
@@ -68,10 +68,11 @@ namespace QLKS
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(2, 3);
+            this.tabControl1.Location = new System.Drawing.Point(3, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(844, 475);
+            this.tabControl1.Size = new System.Drawing.Size(1125, 585);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick);
             // 
@@ -88,10 +89,11 @@ namespace QLKS
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(836, 449);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1117, 556);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bố trí CT";
             // 
@@ -99,27 +101,30 @@ namespace QLKS
             // 
             this.cmbVattu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbVattu.FormattingEnabled = true;
-            this.cmbVattu.Location = new System.Drawing.Point(145, 106);
+            this.cmbVattu.Location = new System.Drawing.Point(193, 130);
+            this.cmbVattu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbVattu.Name = "cmbVattu";
-            this.cmbVattu.Size = new System.Drawing.Size(221, 26);
+            this.cmbVattu.Size = new System.Drawing.Size(293, 32);
             this.cmbVattu.TabIndex = 9;
             // 
             // cmbLoaiPhong
             // 
             this.cmbLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoaiPhong.FormattingEnabled = true;
-            this.cmbLoaiPhong.Location = new System.Drawing.Point(144, 56);
+            this.cmbLoaiPhong.Location = new System.Drawing.Point(192, 69);
+            this.cmbLoaiPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbLoaiPhong.Name = "cmbLoaiPhong";
-            this.cmbLoaiPhong.Size = new System.Drawing.Size(222, 26);
+            this.cmbLoaiPhong.Size = new System.Drawing.Size(295, 32);
             this.cmbLoaiPhong.TabIndex = 8;
             this.cmbLoaiPhong.SelectedIndexChanged += new System.EventHandler(this.cmbLoaiPhong_SelectedIndexChanged);
             // 
             // numSL
             // 
             this.numSL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numSL.Location = new System.Drawing.Point(146, 166);
+            this.numSL.Location = new System.Drawing.Point(195, 204);
+            this.numSL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numSL.Name = "numSL";
-            this.numSL.Size = new System.Drawing.Size(220, 24);
+            this.numSL.Size = new System.Drawing.Size(293, 29);
             this.numSL.TabIndex = 7;
             // 
             // lsvCTVattu
@@ -128,9 +133,10 @@ namespace QLKS
             this.columnHeader1,
             this.columnHeader2});
             this.lsvCTVattu.HideSelection = false;
-            this.lsvCTVattu.Location = new System.Drawing.Point(50, 209);
+            this.lsvCTVattu.Location = new System.Drawing.Point(67, 257);
+            this.lsvCTVattu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lsvCTVattu.Name = "lsvCTVattu";
-            this.lsvCTVattu.Size = new System.Drawing.Size(739, 218);
+            this.lsvCTVattu.Size = new System.Drawing.Size(984, 267);
             this.lsvCTVattu.TabIndex = 6;
             this.lsvCTVattu.UseCompatibleStateImageBehavior = false;
             this.lsvCTVattu.View = System.Windows.Forms.View.Details;
@@ -150,9 +156,10 @@ namespace QLKS
             // 
             this.btnXoaCTVT.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnXoaCTVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaCTVT.Location = new System.Drawing.Point(568, 163);
+            this.btnXoaCTVT.Location = new System.Drawing.Point(757, 201);
+            this.btnXoaCTVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXoaCTVT.Name = "btnXoaCTVT";
-            this.btnXoaCTVT.Size = new System.Drawing.Size(122, 28);
+            this.btnXoaCTVT.Size = new System.Drawing.Size(163, 34);
             this.btnXoaCTVT.TabIndex = 5;
             this.btnXoaCTVT.Text = "Xoá";
             this.btnXoaCTVT.UseVisualStyleBackColor = false;
@@ -162,9 +169,10 @@ namespace QLKS
             // 
             this.btnSuaCTVT.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnSuaCTVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaCTVT.Location = new System.Drawing.Point(568, 106);
+            this.btnSuaCTVT.Location = new System.Drawing.Point(757, 130);
+            this.btnSuaCTVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSuaCTVT.Name = "btnSuaCTVT";
-            this.btnSuaCTVT.Size = new System.Drawing.Size(122, 28);
+            this.btnSuaCTVT.Size = new System.Drawing.Size(163, 34);
             this.btnSuaCTVT.TabIndex = 4;
             this.btnSuaCTVT.Text = "Sửa";
             this.btnSuaCTVT.UseVisualStyleBackColor = false;
@@ -174,9 +182,10 @@ namespace QLKS
             // 
             this.btnThemCTVT.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnThemCTVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemCTVT.Location = new System.Drawing.Point(568, 50);
+            this.btnThemCTVT.Location = new System.Drawing.Point(757, 62);
+            this.btnThemCTVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThemCTVT.Name = "btnThemCTVT";
-            this.btnThemCTVT.Size = new System.Drawing.Size(122, 32);
+            this.btnThemCTVT.Size = new System.Drawing.Size(163, 39);
             this.btnThemCTVT.TabIndex = 3;
             this.btnThemCTVT.Text = "Thêm";
             this.btnThemCTVT.UseVisualStyleBackColor = false;
@@ -187,9 +196,10 @@ namespace QLKS
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(36, 173);
+            this.label3.Location = new System.Drawing.Point(48, 213);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 18);
+            this.label3.Size = new System.Drawing.Size(94, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Số lượng";
             // 
@@ -198,9 +208,10 @@ namespace QLKS
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(36, 111);
+            this.label2.Location = new System.Drawing.Point(48, 137);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 18);
+            this.label2.Size = new System.Drawing.Size(69, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Vật tư:";
             // 
@@ -209,9 +220,10 @@ namespace QLKS
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(24, 59);
+            this.label1.Location = new System.Drawing.Point(32, 73);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 18);
+            this.label1.Size = new System.Drawing.Size(121, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Loại phòng:";
             // 
@@ -228,10 +240,11 @@ namespace QLKS
             this.tabPage2.Controls.Add(this.btnSuaVT);
             this.tabPage2.Controls.Add(this.btnThemVT);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(836, 449);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1117, 556);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản lý";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -239,18 +252,20 @@ namespace QLKS
             // txtTenVatTu
             // 
             this.txtTenVatTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenVatTu.Location = new System.Drawing.Point(171, 149);
+            this.txtTenVatTu.Location = new System.Drawing.Point(228, 183);
+            this.txtTenVatTu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenVatTu.Name = "txtTenVatTu";
-            this.txtTenVatTu.Size = new System.Drawing.Size(150, 24);
+            this.txtTenVatTu.Size = new System.Drawing.Size(199, 29);
             this.txtTenVatTu.TabIndex = 8;
             this.txtTenVatTu.TextChanged += new System.EventHandler(this.txtTenVatTu_TextChanged);
             // 
             // txtMaVatTu
             // 
             this.txtMaVatTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaVatTu.Location = new System.Drawing.Point(171, 87);
+            this.txtMaVatTu.Location = new System.Drawing.Point(228, 107);
+            this.txtMaVatTu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaVatTu.Name = "txtMaVatTu";
-            this.txtMaVatTu.Size = new System.Drawing.Size(150, 24);
+            this.txtMaVatTu.Size = new System.Drawing.Size(199, 29);
             this.txtMaVatTu.TabIndex = 7;
             this.txtMaVatTu.TextChanged += new System.EventHandler(this.txtMaVatTu_TextChanged);
             // 
@@ -260,87 +275,15 @@ namespace QLKS
             this.columnHeader3,
             this.columnHeader4});
             this.lsvQLVattu.HideSelection = false;
-            this.lsvQLVattu.Location = new System.Drawing.Point(410, 36);
+            this.lsvQLVattu.Location = new System.Drawing.Point(547, 44);
+            this.lsvQLVattu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lsvQLVattu.Name = "lsvQLVattu";
-            this.lsvQLVattu.Size = new System.Drawing.Size(417, 411);
+            this.lsvQLVattu.Size = new System.Drawing.Size(555, 505);
             this.lsvQLVattu.TabIndex = 6;
             this.lsvQLVattu.UseCompatibleStateImageBehavior = false;
             this.lsvQLVattu.View = System.Windows.Forms.View.Details;
             this.lsvQLVattu.SelectedIndexChanged += new System.EventHandler(this.lsvQLVattu_SelectedIndexChanged);
             this.lsvQLVattu.Click += new System.EventHandler(this.lsvQLVattu_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(58, 156);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 18);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Tên vật tư:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(58, 94);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 18);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Mã vật tư:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(101, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(245, 31);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "QUẢN LÝ VẬT TƯ";
-            // 
-            // btnXoaVT
-            // 
-            this.btnXoaVT.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnXoaVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaVT.Location = new System.Drawing.Point(317, 271);
-            this.btnXoaVT.Name = "btnXoaVT";
-            this.btnXoaVT.Size = new System.Drawing.Size(85, 23);
-            this.btnXoaVT.TabIndex = 2;
-            this.btnXoaVT.Text = "Xoá";
-            this.btnXoaVT.UseVisualStyleBackColor = false;
-            this.btnXoaVT.Click += new System.EventHandler(this.btnXoaVT_Click);
-            // 
-            // btnSuaVT
-            // 
-            this.btnSuaVT.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnSuaVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaVT.Location = new System.Drawing.Point(196, 271);
-            this.btnSuaVT.Name = "btnSuaVT";
-            this.btnSuaVT.Size = new System.Drawing.Size(85, 23);
-            this.btnSuaVT.TabIndex = 1;
-            this.btnSuaVT.Text = "Sửa";
-            this.btnSuaVT.UseVisualStyleBackColor = false;
-            this.btnSuaVT.Click += new System.EventHandler(this.btnSuaVT_Click);
-            // 
-            // btnThemVT
-            // 
-            this.btnThemVT.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnThemVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemVT.Location = new System.Drawing.Point(61, 271);
-            this.btnThemVT.Name = "btnThemVT";
-            this.btnThemVT.Size = new System.Drawing.Size(85, 23);
-            this.btnThemVT.TabIndex = 0;
-            this.btnThemVT.Text = "Thêm";
-            this.btnThemVT.UseVisualStyleBackColor = false;
-            this.btnThemVT.Click += new System.EventHandler(this.btnThemVT_Click);
-            // 
-            // loi
-            // 
-            this.loi.ContainerControl = this;
             // 
             // columnHeader3
             // 
@@ -352,12 +295,92 @@ namespace QLKS
             this.columnHeader4.Text = "Tên vật tư";
             this.columnHeader4.Width = 180;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(77, 192);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 24);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Tên vật tư:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(77, 116);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 24);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Mã vật tư:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(60, 20);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(302, 40);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "QUẢN LÝ VẬT TƯ";
+            // 
+            // btnXoaVT
+            // 
+            this.btnXoaVT.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnXoaVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaVT.Location = new System.Drawing.Point(423, 334);
+            this.btnXoaVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoaVT.Name = "btnXoaVT";
+            this.btnXoaVT.Size = new System.Drawing.Size(113, 28);
+            this.btnXoaVT.TabIndex = 2;
+            this.btnXoaVT.Text = "Xoá";
+            this.btnXoaVT.UseVisualStyleBackColor = false;
+            this.btnXoaVT.Click += new System.EventHandler(this.btnXoaVT_Click);
+            // 
+            // btnSuaVT
+            // 
+            this.btnSuaVT.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnSuaVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaVT.Location = new System.Drawing.Point(261, 334);
+            this.btnSuaVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSuaVT.Name = "btnSuaVT";
+            this.btnSuaVT.Size = new System.Drawing.Size(113, 28);
+            this.btnSuaVT.TabIndex = 1;
+            this.btnSuaVT.Text = "Sửa";
+            this.btnSuaVT.UseVisualStyleBackColor = false;
+            this.btnSuaVT.Click += new System.EventHandler(this.btnSuaVT_Click);
+            // 
+            // btnThemVT
+            // 
+            this.btnThemVT.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnThemVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemVT.Location = new System.Drawing.Point(81, 334);
+            this.btnThemVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemVT.Name = "btnThemVT";
+            this.btnThemVT.Size = new System.Drawing.Size(113, 28);
+            this.btnThemVT.TabIndex = 0;
+            this.btnThemVT.Text = "Thêm";
+            this.btnThemVT.UseVisualStyleBackColor = false;
+            this.btnThemVT.Click += new System.EventHandler(this.btnThemVT_Click);
+            // 
+            // loi
+            // 
+            this.loi.ContainerControl = this;
+            // 
             // FormVatTu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 478);
+            this.ClientSize = new System.Drawing.Size(1127, 588);
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormVatTu";
             this.Text = "FormVatTu";
             this.Load += new System.EventHandler(this.FormVatTu_Load);

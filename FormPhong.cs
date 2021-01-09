@@ -18,7 +18,7 @@ namespace QLKS
     {
 
         public FormMain frmMain;
-
+        public FormVatTu frmVT;
         PhongBUS pBUS;
         PhongDTO pDTO;
         LoaiPhongBUS lpBUS;
@@ -317,6 +317,24 @@ namespace QLKS
         private void txtSonguoi_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnQLVT_Click_1(object sender, EventArgs e)
+        {
+            if (lsvLoaiPhong.SelectedItems.Count <= 0)
+            {
+                MessageBox.Show("chọn 1 dòng");
+                return;
+            }
+            else
+            {
+                string maloai = lsvLoaiPhong.SelectedItems[0].SubItems[0].Text;
+                frmVT = new FormVatTu();
+                frmVT.frmPhong = this;
+                frmVT.frmMain = frmMain;
+                frmVT.maloai = maloai;
+                frmVT.ShowDialog();
+            }
         }
     }
 }
