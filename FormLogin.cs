@@ -68,16 +68,7 @@ namespace QLKS
             }
         }
 
-        private void chkPass_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkPass.Checked)
-            {
-                txtMatKhau.UseSystemPasswordChar = false;
-            }
-            else
-                txtMatKhau.UseSystemPasswordChar = true;
-        }
-
+    
         private void btn_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -47,6 +47,7 @@
     <Compile Include="DichVuBUS.cs" />
     <Compile Include="HeThongBUS.cs" />
     <Compile Include="HoaDonBUS.cs" />
+    <Compile Include="KhachHangBUS.cs" />
     <Compile Include="KiemTraPhongBUS.cs" />
     <Compile Include="LoaiPhongBUS.cs" />
     <Compile Include="LoginBUS.cs" />

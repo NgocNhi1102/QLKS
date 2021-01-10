@@ -226,5 +226,87 @@ namespace QLKS
             frmNhanVien.frmMain = this;
             frmNhanVien.ShowDialog();
         }
+
+        private void DICHVUtoolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            FormDichVu frmDichVu = new FormDichVu();
+            frmDichVu.frmMain = this;
+            frmDichVu.ShowDialog();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TTKHACHHANGtoolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            FormKhachHang frmKH = new FormKhachHang();
+            frmKH.frmMain = this;
+            frmKH.ShowDialog();
+        }
+
+        private void PHIEUDATPHONGtoolStripMenuItem16_Click(object sender, EventArgs e)
+        {
+
+            FormPhieuDatPhong frmPhieuDatPhong = new FormPhieuDatPhong();
+            frmPhieuDatPhong.frmMain = this;
+            frmPhieuDatPhong.ShowDialog();
+        }
+        public void capnhatphong()
+        {
+            /*  lsvMain.Items.Clear();
+
+              pdpBUS = new PhieuDatPhongBUS();
+              IList<PhieuDatPhongDTO> listpdp = pdpBUS.getListPhieuDatPhongAll();
+              if (listpdp != null)
+              {
+                  foreach (PhieuDatPhongDTO pdp in listpdp)
+                  {
+                      if (pdp.Tinhtrang == "waitting")
+                      {
+                          ctdpBUS = new ChiTietDatPhongBUS();
+                          IList<ChiTietDatPhongDTO> listctdp = ctdpBUS.getChiTietDatPhongByID(pdp.Maphieudat);
+                          foreach (ChiTietDatPhongDTO ctdp in listctdp)
+                          {
+                              pBUS = new PhongBUS();
+                              PhongDTO p = pBUS.getPhongByID(ctdp.Maphong);
+                              if (p.Dadat == false && p.Danhan == false)
+                              {
+                                  PhongDTO pDTO = new PhongDTO();
+                                  pDTO.Maphong = p.Maphong;
+                                  pDTO.Maloai = p.Maloai;
+                                  pDTO.Dadat = true;
+                                  pDTO.Danhan = false;
+                                  pBUS.updatePhong(pDTO);
+                              }
+                          }
+                      }
+                  }
+              }
+
+              pBUS = new PhongBUS();
+              IList<PhongDTO> listp = pBUS.getListPhongAll();
+              foreach (PhongDTO dread in listp)
+              {
+                  int i = lsvMain.Items.Count;
+                  lsvMain.Items.Add(dread.Maphong);
+                  string dat = "", nhan = "";
+                  int imgidx = 0;
+                  dat = dread.Dadat.ToString();
+                  nhan = dread.Danhan.ToString();
+                  if (dat == "False" && nhan == "False")
+                      imgidx = 0;
+                  else if (dat == "True" && nhan == "False")
+                      imgidx = 1;
+                  else if (dat == "False" && nhan == "True")
+                      imgidx = 2;
+                  else if (dat == "True" && nhan == "True")
+                      imgidx = 3;
+                  lsvMain.Items[i].ImageIndex = imgidx;
+
+              }
+            */
+        }
     }
 }

@@ -57,6 +57,7 @@ namespace QLKS
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labUser = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,33 +94,33 @@ namespace QLKS
             // DANGNHAPtoolStripMenuItem6
             // 
             this.DANGNHAPtoolStripMenuItem6.Name = "DANGNHAPtoolStripMenuItem6";
-            this.DANGNHAPtoolStripMenuItem6.Size = new System.Drawing.Size(224, 26);
+            this.DANGNHAPtoolStripMenuItem6.Size = new System.Drawing.Size(197, 26);
             this.DANGNHAPtoolStripMenuItem6.Text = "ĐĂNG NHẬP";
             this.DANGNHAPtoolStripMenuItem6.Click += new System.EventHandler(this.DANGNHAPtoolStripMenuItem6_Click);
             // 
             // DANGXUATtoolStripMenuItem7
             // 
             this.DANGXUATtoolStripMenuItem7.Name = "DANGXUATtoolStripMenuItem7";
-            this.DANGXUATtoolStripMenuItem7.Size = new System.Drawing.Size(224, 26);
+            this.DANGXUATtoolStripMenuItem7.Size = new System.Drawing.Size(197, 26);
             this.DANGXUATtoolStripMenuItem7.Text = "ĐĂNG XUẤT";
             this.DANGXUATtoolStripMenuItem7.Click += new System.EventHandler(this.DANGXUATtoolStripMenuItem7_Click);
             // 
             // DOIMATKHAUtoolStripMenuItem8
             // 
             this.DOIMATKHAUtoolStripMenuItem8.Name = "DOIMATKHAUtoolStripMenuItem8";
-            this.DOIMATKHAUtoolStripMenuItem8.Size = new System.Drawing.Size(224, 26);
+            this.DOIMATKHAUtoolStripMenuItem8.Size = new System.Drawing.Size(197, 26);
             this.DOIMATKHAUtoolStripMenuItem8.Text = "ĐỔI MẬT KHẨU";
             this.DOIMATKHAUtoolStripMenuItem8.Click += new System.EventHandler(this.DOIMATKHAUtoolStripMenuItem8_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(194, 6);
             // 
             // THOATtoolStripMenuItem9
             // 
             this.THOATtoolStripMenuItem9.Name = "THOATtoolStripMenuItem9";
-            this.THOATtoolStripMenuItem9.Size = new System.Drawing.Size(224, 26);
+            this.THOATtoolStripMenuItem9.Size = new System.Drawing.Size(197, 26);
             this.THOATtoolStripMenuItem9.Text = "THOÁT";
             this.THOATtoolStripMenuItem9.Click += new System.EventHandler(this.THOATtoolStripMenuItem9_Click);
             // 
@@ -154,6 +155,7 @@ namespace QLKS
             this.DICHVUtoolStripMenuItem12.Name = "DICHVUtoolStripMenuItem12";
             this.DICHVUtoolStripMenuItem12.Size = new System.Drawing.Size(224, 26);
             this.DICHVUtoolStripMenuItem12.Text = "DỊCH VỤ";
+            this.DICHVUtoolStripMenuItem12.Click += new System.EventHandler(this.DICHVUtoolStripMenuItem12_Click);
             // 
             // NHANVIENtoolStripMenuItem13
             // 
@@ -175,12 +177,14 @@ namespace QLKS
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(119, 24);
             this.toolStripMenuItem3.Text = "KHÁCH HÀNG";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // TTKHACHHANGtoolStripMenuItem15
             // 
             this.TTKHACHHANGtoolStripMenuItem15.Name = "TTKHACHHANGtoolStripMenuItem15";
-            this.TTKHACHHANGtoolStripMenuItem15.Size = new System.Drawing.Size(208, 26);
+            this.TTKHACHHANGtoolStripMenuItem15.Size = new System.Drawing.Size(224, 26);
             this.TTKHACHHANGtoolStripMenuItem15.Text = "TT KHÁCH HÀNG";
+            this.TTKHACHHANGtoolStripMenuItem15.Click += new System.EventHandler(this.TTKHACHHANGtoolStripMenuItem15_Click);
             // 
             // THUEPHONGtoolStripMenuItem4
             // 
@@ -190,7 +194,7 @@ namespace QLKS
             this.toolStripSeparator2,
             this.HOADONtoolStripMenuItem18});
             this.THUEPHONGtoolStripMenuItem4.Name = "THUEPHONGtoolStripMenuItem4";
-            this.THUEPHONGtoolStripMenuItem4.Size = new System.Drawing.Size(115, 24);
+            this.THUEPHONGtoolStripMenuItem4.Size = new System.Drawing.Size(115, 26);
             this.THUEPHONGtoolStripMenuItem4.Text = "THUÊ PHÒNG";
             // 
             // PHIEUDATPHONGtoolStripMenuItem16
@@ -198,6 +202,7 @@ namespace QLKS
             this.PHIEUDATPHONGtoolStripMenuItem16.Name = "PHIEUDATPHONGtoolStripMenuItem16";
             this.PHIEUDATPHONGtoolStripMenuItem16.Size = new System.Drawing.Size(229, 26);
             this.PHIEUDATPHONGtoolStripMenuItem16.Text = "PHIẾU ĐẶT PHÒNG";
+            this.PHIEUDATPHONGtoolStripMenuItem16.Click += new System.EventHandler(this.PHIEUDATPHONGtoolStripMenuItem16_Click);
             // 
             // PHIEUTHUEPHONGtoolStripMenuItem17
             // 
@@ -249,7 +254,7 @@ namespace QLKS
             this.pictureBox1.Location = new System.Drawing.Point(0, 31);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1117, 609);
+            this.pictureBox1.Size = new System.Drawing.Size(765, 606);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -263,11 +268,21 @@ namespace QLKS
             this.labUser.TabIndex = 3;
             this.labUser.Text = "-----";
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(765, 31);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(352, 606);
+            this.listView1.TabIndex = 4;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1117, 638);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.labUser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -312,6 +327,7 @@ namespace QLKS
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labUser;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 
