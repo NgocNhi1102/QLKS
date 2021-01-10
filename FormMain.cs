@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
+using DTO;
+using BUS;
+
 
 namespace QLKS
 {
@@ -24,7 +26,13 @@ namespace QLKS
         public string m_username = "";
         public string m_maNV = "";
 
+        PhongBUS pBUS;
+        ChiTietDatPhongBUS ctdpBUS;
+        PhieuDatPhongBUS pdpBUS;
+        PhieuThuePhongBUS ptpBUS;
+
         private bool num;
+
         public FormMain()
         {
             InitializeComponent();
@@ -111,7 +119,7 @@ namespace QLKS
             QUANLYtoolStripMenuItem2.Enabled = true;
             DOIMATKHAUtoolStripMenuItem8.Enabled = true;
            // KHACHHANGtoolStripMenuItem3.Enabled = true;
-            //THUEPHONGtoolStripMenuItem4.Enabled = true;
+            THUEPHONGtoolStripMenuItem4.Enabled = true;
            // BAOCAOtoolStripMenuItem5.Enabled = true;
             DANGXUATtoolStripMenuItem7.Enabled = true;
         }
@@ -307,6 +315,13 @@ namespace QLKS
 
               }
             */
+        }
+
+        private void PHIEUTHUEPHONGtoolStripMenuItem17_Click(object sender, EventArgs e)
+        {
+            FormPhieuThuePhong frmPhieuThuePhong = new FormPhieuThuePhong();
+            frmPhieuThuePhong.frmMain = this;
+            frmPhieuThuePhong.ShowDialog();
         }
     }
 }
