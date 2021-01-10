@@ -31,14 +31,27 @@ namespace QLKS
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("KHÁCH HÀNG", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Mã khách hàng");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Tên khách hàng");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Giới tính");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("CMND/Passport");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Địa chỉ");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Cơ quan");
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Điện thoại");
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Email");
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ĐẶT PHÒNG", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Mã khách hàng"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Tên khách hàng"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Giới tính"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            "CMND/Passport"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Địa chỉ"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Cơ quan"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Điện thoại"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Email"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Ngày đến");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("Ngày đi");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("Số người");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("Tiền cọc");
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -86,6 +99,7 @@ namespace QLKS
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.loi = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -162,7 +176,7 @@ namespace QLKS
             this.cmbKhachHang.FormattingEnabled = true;
             this.cmbKhachHang.Location = new System.Drawing.Point(199, 108);
             this.cmbKhachHang.Name = "cmbKhachHang";
-            this.cmbKhachHang.Size = new System.Drawing.Size(121, 24);
+            this.cmbKhachHang.Size = new System.Drawing.Size(186, 24);
             this.cmbKhachHang.TabIndex = 7;
             this.cmbKhachHang.SelectedIndexChanged += new System.EventHandler(this.cmbKhachHang_SelectedIndexChanged);
             // 
@@ -170,9 +184,11 @@ namespace QLKS
             // 
             this.txtSonguoi.Location = new System.Drawing.Point(199, 228);
             this.txtSonguoi.Name = "txtSonguoi";
-            this.txtSonguoi.Size = new System.Drawing.Size(100, 22);
+            this.txtSonguoi.Size = new System.Drawing.Size(186, 22);
             this.txtSonguoi.TabIndex = 8;
             this.txtSonguoi.TextChanged += new System.EventHandler(this.txtSonguoi_TextChanged);
+            this.txtSonguoi.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSonguoi_KeyDown);
+            this.txtSonguoi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSonguoi_KeyPress);
             // 
             // txtTiencoc
             // 
@@ -181,6 +197,8 @@ namespace QLKS
             this.txtTiencoc.Size = new System.Drawing.Size(195, 22);
             this.txtTiencoc.TabIndex = 9;
             this.txtTiencoc.TextChanged += new System.EventHandler(this.txtTiencoc_TextChanged);
+            this.txtTiencoc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTiencoc_KeyDown);
+            this.txtTiencoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTiencoc_KeyPress);
             // 
             // dtpNgayden
             // 
@@ -288,9 +306,9 @@ namespace QLKS
             this.columnHeader7,
             this.columnHeader8});
             this.lsvViewPhong.HideSelection = false;
-            this.lsvViewPhong.Location = new System.Drawing.Point(20, 244);
+            this.lsvViewPhong.Location = new System.Drawing.Point(6, 244);
             this.lsvViewPhong.Name = "lsvViewPhong";
-            this.lsvViewPhong.Size = new System.Drawing.Size(516, 194);
+            this.lsvViewPhong.Size = new System.Drawing.Size(530, 194);
             this.lsvViewPhong.TabIndex = 1;
             this.lsvViewPhong.UseCompatibleStateImageBehavior = false;
             this.lsvViewPhong.View = System.Windows.Forms.View.Details;
@@ -332,8 +350,11 @@ namespace QLKS
             this.columnHeader10});
             listViewGroup1.Header = "KHÁCH HÀNG";
             listViewGroup1.Name = "listViewGroupKHACHHANG";
+            listViewGroup2.Header = "ĐẶT PHÒNG";
+            listViewGroup2.Name = "listViewGroupDATPHONG";
             this.lsvChiTiet.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1});
+            listViewGroup1,
+            listViewGroup2});
             this.lsvChiTiet.HideSelection = false;
             listViewItem1.Group = listViewGroup1;
             listViewItem2.Group = listViewGroup1;
@@ -343,6 +364,10 @@ namespace QLKS
             listViewItem6.Group = listViewGroup1;
             listViewItem7.Group = listViewGroup1;
             listViewItem8.Group = listViewGroup1;
+            listViewItem9.Group = listViewGroup2;
+            listViewItem10.Group = listViewGroup2;
+            listViewItem11.Group = listViewGroup2;
+            listViewItem12.Group = listViewGroup2;
             this.lsvChiTiet.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2,
@@ -351,16 +376,21 @@ namespace QLKS
             listViewItem5,
             listViewItem6,
             listViewItem7,
-            listViewItem8});
-            this.lsvChiTiet.Location = new System.Drawing.Point(14, 20);
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12});
+            this.lsvChiTiet.Location = new System.Drawing.Point(6, 20);
             this.lsvChiTiet.Name = "lsvChiTiet";
-            this.lsvChiTiet.Size = new System.Drawing.Size(522, 203);
+            this.lsvChiTiet.Size = new System.Drawing.Size(530, 309);
             this.lsvChiTiet.TabIndex = 0;
             this.lsvChiTiet.UseCompatibleStateImageBehavior = false;
             // 
             // columnHeader9
             // 
             this.columnHeader9.Text = "Thông tin";
+            this.columnHeader9.Width = 177;
             // 
             // columnHeader10
             // 
@@ -483,7 +513,6 @@ namespace QLKS
             this.lsvDSPhieuDatPhong.TabIndex = 0;
             this.lsvDSPhieuDatPhong.UseCompatibleStateImageBehavior = false;
             this.lsvDSPhieuDatPhong.View = System.Windows.Forms.View.Details;
-//            this.lsvDSPhieuDatPhong.SelectedIndexChanged += new System.EventHandler(this.lsvDSPhieuDatPhong_SelectedIndexChanged_1);
             // 
             // columnHeader11
             // 
@@ -519,12 +548,23 @@ namespace QLKS
             // 
             this.loi.ContainerControl = this;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(245, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(309, 37);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "PHIẾU ĐẶT PHÒNG";
+            // 
             // FormPhieuDatPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1151, 586);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dtpNgaydi);
@@ -603,5 +643,6 @@ namespace QLKS
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button button1_NhanPhong;
+        private System.Windows.Forms.Label label6;
     }
 }

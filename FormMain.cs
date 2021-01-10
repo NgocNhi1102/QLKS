@@ -61,7 +61,7 @@ namespace QLKS
                 MainEnNhanVien();
             }
             labUser.Text = "Hi! " + m_username;
-            //capnhatphong();
+            capnhatphong();
         }
 
         private void DOIMATKHAUtoolStripMenuItem8_Click(object sender, EventArgs e)
@@ -98,7 +98,7 @@ namespace QLKS
         {
             QUANLYtoolStripMenuItem2.Enabled = false;
             DOIMATKHAUtoolStripMenuItem8.Enabled = true;
-           // KHACHHANGtoolStripMenuItem3.Enabled = true;
+            KHACHHANGgtoolStripMenuItem3.Enabled = true;
             THUEPHONGtoolStripMenuItem4.Enabled = true;
             BAOCAOtoolStripMenuItem5.Enabled = false;
             DANGXUATtoolStripMenuItem7.Enabled = true;
@@ -108,7 +108,7 @@ namespace QLKS
         {
             QUANLYtoolStripMenuItem2.Enabled = true;
             DOIMATKHAUtoolStripMenuItem8.Enabled = true;
-           // KHACHHANGtoolStripMenuItem3.Enabled = true;
+            KHACHHANGgtoolStripMenuItem3.Enabled = true;
             THUEPHONGtoolStripMenuItem4.Enabled = true;
             BAOCAOtoolStripMenuItem5.Enabled = true;
             DANGXUATtoolStripMenuItem7.Enabled = true;
@@ -118,7 +118,7 @@ namespace QLKS
         {
             QUANLYtoolStripMenuItem2.Enabled = true;
             DOIMATKHAUtoolStripMenuItem8.Enabled = true;
-           // KHACHHANGtoolStripMenuItem3.Enabled = true;
+            KHACHHANGgtoolStripMenuItem3.Enabled = true;
             THUEPHONGtoolStripMenuItem4.Enabled = true;
            // BAOCAOtoolStripMenuItem5.Enabled = true;
             DANGXUATtoolStripMenuItem7.Enabled = true;
@@ -127,7 +127,7 @@ namespace QLKS
         {
             QUANLYtoolStripMenuItem2.Enabled = false;
             DOIMATKHAUtoolStripMenuItem8.Enabled = false;
-          //  KHACHHANGtoolStripMenuItem3.Enabled = false;
+            KHACHHANGgtoolStripMenuItem3.Enabled = false;
             THUEPHONGtoolStripMenuItem4.Enabled = false;
             BAOCAOtoolStripMenuItem5.Enabled = false;
             DANGXUATtoolStripMenuItem7.Enabled = false;
@@ -263,7 +263,7 @@ namespace QLKS
         }
         public void capnhatphong()
         {
-            /*  lsvMain.Items.Clear();
+             lsvMain.Items.Clear();
 
               pdpBUS = new PhieuDatPhongBUS();
               IList<PhieuDatPhongDTO> listpdp = pdpBUS.getListPhieuDatPhongAll();
@@ -314,7 +314,7 @@ namespace QLKS
                   lsvMain.Items[i].ImageIndex = imgidx;
 
               }
-            */
+            
         }
 
         private void PHIEUTHUEPHONGtoolStripMenuItem17_Click(object sender, EventArgs e)

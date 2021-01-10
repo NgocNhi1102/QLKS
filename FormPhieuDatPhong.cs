@@ -15,7 +15,7 @@ namespace QLKS
 {
     public partial class FormPhieuDatPhong : Form
     {
-        //HotelDataContext hotel = new HotelDataContext();
+       
         //HotelDataContext hotel = new HotelDataContext();
         public double tongtien;
         public FormPhieuThuePhong frmPhieuThuePhong;
@@ -449,12 +449,12 @@ namespace QLKS
 
         private void btndatphong_Click(object sender, EventArgs e)
         {
-            if (kiemtradl() == false)
+            if (kiemtradl() == true)
             {
                 MessageBox.Show("Chưa nhập đủ thông tin, Kiểm tra lại!!!");
                 return;
             }
-            if (ktsonguoi() == false)
+            if (ktsonguoi() == true)
             {
                 MessageBox.Show("Quá số người quy định cho phòng!!!.Kiểm tra lại.");
                 return;
@@ -652,7 +652,7 @@ namespace QLKS
                     show_lsvPDP();
 
                     frmPhieuThuePhong = new FormPhieuThuePhong();
-                    //  frmPhieuThuePhong.frmPhieuDatPhong = this;
+                    // frmPhieuThuePhong.frmPhieuDatPhong = this;
                     frmPhieuThuePhong.frmMain = frmMain;
                     //MessageBox.Show(maloai);
                     frmPhieuThuePhong.maphieudat = maphieudat;
@@ -706,7 +706,7 @@ namespace QLKS
                 return;
             }
         }
-
+        //-------------chi tiết--------
         private void cmbKhachHang_SelectedIndexChanged(object sender, EventArgs e)
         {
             //lsvDSPhieuDatPhong.SelectedItems.Clear();
@@ -870,7 +870,7 @@ namespace QLKS
                 string maphong = lsvViewPhong.Items[j].SubItems[0].Text;
                 pBUS = new PhongBUS();
                 PhongDTO p = pBUS.getPhongByID(maphong);
-                //MessageBox.Show(maphong);
+             MessageBox.Show(maphong);
                 pDTO = new PhongDTO();
                 pDTO.Maphong = p.Maphong;
                 pDTO.Maloai = p.Maloai;
@@ -1047,7 +1047,7 @@ namespace QLKS
                     show_lsvPDP();
 
                     frmPhieuThuePhong = new FormPhieuThuePhong();
-                    //  frmPhieuThuePhong.frmPhieuDatPhong = this;
+                    frmPhieuThuePhong.frmPhieuDatPhong = this;
                     frmPhieuThuePhong.frmMain = frmMain;
                     //MessageBox.Show(maloai);
                     frmPhieuThuePhong.maphieudat = maphieudat;
@@ -1266,7 +1266,25 @@ namespace QLKS
             }
         }
 
-        
+        private void txtSonguoi_KeyDown(object sender, KeyEventArgs e)
+        {
+            frmMain.KTChiSo(sender, e, txtSonguoi, loi);
+        }
+
+        private void txtSonguoi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            frmMain.KoNhapChu(sender, e);
+        }
+
+        private void txtTiencoc_KeyDown(object sender, KeyEventArgs e)
+        {
+            frmMain.KTChiSo(sender, e, txtTiencoc, loi);
+        }
+
+        private void txtTiencoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            frmMain.KoNhapChu(sender, e);
+        }
     }
     }
 

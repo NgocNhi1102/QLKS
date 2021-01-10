@@ -106,7 +106,7 @@ namespace BUS
             catch
             {
                 return 0;
-                //throw new Exception("Không thêm được dữ liệu!");
+                throw new Exception("Không thêm được dữ liệu!");
             }
         }
 

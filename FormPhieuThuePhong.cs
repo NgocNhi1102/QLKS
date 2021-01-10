@@ -150,12 +150,7 @@ namespace QLKS
             return true;
         }
 
-        private void cmbMaPT_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            show_Phong();
-            show_kh();
-            show_CTTP();
-        }
+  
 
         private void show_Phong()
         {
@@ -338,19 +333,9 @@ namespace QLKS
             }
         }
 
-        private void cmbMaphong_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            show_CTTP();
-        }
+        
 
-        private void cmbMaDV_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            dvBUS = new DichVuBUS();
-            DichVuDTO dv = dvBUS.getDichVuByID(cmbMaDV.SelectedValue.ToString());
-            if (dv != null)
-                labGia.Text = Math.Round(dv.Gia, 0) + "/" + dv.Donvitinh;
-            dtpNgayGio.Value = DateTime.Now;
-        }
+
 
         private bool kiemtra()
         {
@@ -392,6 +377,27 @@ namespace QLKS
 
         private void btnThem_MouseMove(object sender, MouseEventArgs e)
         {
+            dtpNgayGio.Value = DateTime.Now;
+        }
+
+        private void cmbMaPT_SelectedValueChanged(object sender, EventArgs e)
+        {
+            show_Phong();
+            show_kh();
+            show_CTTP();
+        }
+
+        private void cmbMaphong_SelectedValueChanged(object sender, EventArgs e)
+        {
+            show_CTTP();
+        }
+
+        private void cmbMaDV_SelectedValueChanged(object sender, EventArgs e)
+        {
+            dvBUS = new DichVuBUS();
+            DichVuDTO dv = dvBUS.getDichVuByID(cmbMaDV.SelectedValue.ToString());
+            if (dv != null)
+                labGia.Text = Math.Round(dv.Gia, 0) + "/" + dv.Donvitinh;
             dtpNgayGio.Value = DateTime.Now;
         }
     }
