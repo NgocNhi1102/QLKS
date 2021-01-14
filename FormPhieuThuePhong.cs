@@ -179,7 +179,7 @@ namespace QLKS
             }
             else
             {
-                cmbMaphong.SelectedIndex = 0;
+                cmbMaphong.SelectedValue = 0;
             }
         }
         private void show_CTTP()

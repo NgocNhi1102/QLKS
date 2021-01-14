@@ -103,14 +103,7 @@ namespace QLKS
             cmbKhachHang.DataSource = khBUS.getListKhachHangAll();
             cmbKhachHang.DisplayMember = "Tenkhachhang";
             cmbKhachHang.ValueMember = "Makhachhang";
-            //
-            /*
-            DataTableReader read = frmMain.dtKhachhang.CreateDataReader();
-            cmbKhachHang.Items.Clear();
-            while (read.Read())
-            {
-                cmbKhachHang.Items.Add(read["tenkhachhang"].ToString());
-            }*/
+           
         }
         private void show_lsvPDP()
         {
@@ -449,7 +442,7 @@ namespace QLKS
 
         private void btndatphong_Click(object sender, EventArgs e)
         {
-            if (kiemtradl() == true)
+           /* if (kiemtradl() == true)
             {
                 MessageBox.Show("Chưa nhập đủ thông tin, Kiểm tra lại!!!");
                 return;
@@ -459,6 +452,7 @@ namespace QLKS
                 MessageBox.Show("Quá số người quy định cho phòng!!!.Kiểm tra lại.");
                 return;
             }
+           */
             pdpBUS = new PhieuDatPhongBUS();
             pdpDTO = new PhieuDatPhongDTO();
             pdpDTO.Maphieudat = labMaPD.Text;
@@ -652,7 +646,7 @@ namespace QLKS
                     show_lsvPDP();
 
                     frmPhieuThuePhong = new FormPhieuThuePhong();
-                    // frmPhieuThuePhong.frmPhieuDatPhong = this;
+                    frmPhieuThuePhong.frmPhieuDatPhong = this;
                     frmPhieuThuePhong.frmMain = frmMain;
                     //MessageBox.Show(maloai);
                     frmPhieuThuePhong.maphieudat = maphieudat;
@@ -992,7 +986,7 @@ namespace QLKS
                         lsvViewPhong.Items[i].SubItems.Add(listlp.Gia.ToString("0,0"));
                     }
                 }
-            //
+            
             ListView.CheckedListViewItemCollection checkedItems = lsvTimPhong.CheckedItems;
             foreach (ListViewItem item in checkedItems)
             {

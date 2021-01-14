@@ -29,7 +29,7 @@ namespace QLKS
         PhongBUS pBUS;
         ChiTietDatPhongBUS ctdpBUS;
         PhieuDatPhongBUS pdpBUS;
-        PhieuThuePhongBUS ptpBUS;
+        //PhieuThuePhongBUS ptpBUS;
 
         private bool num;
 
