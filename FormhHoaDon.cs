@@ -31,9 +31,9 @@ namespace QLKS
         PhongBUS pBUS;
         PhongDTO pDTO;
 
-        InHoaDonDichVuBUS inhddvBUS;
+        //InHoaDonDichVuBUS inhddvBUS;
 
-        InHoaDonPhongBUS inhdpBUS;
+        //InHoaDonPhongBUS inhdpBUS;
 
         LoaiPhongBUS lpBUS;
 
@@ -259,24 +259,24 @@ namespace QLKS
             listp.Clear();
             if (flagtinhtien == true)
             {
-                inhddvBUS = new InHoaDonDichVuBUS();
-                inhdpBUS = new InHoaDonPhongBUS();
+                //inhddvBUS = new InHoaDonDichVuBUS();
+                //inhdpBUS = new InHoaDonPhongBUS();
                 //   listdv = inhddvBUS.InhoadonDichVu(labMaHD.Text);
                 //  listp = inhdpBUS.InhoadonPhong(labMaHD.Text);
                 QuanLyksDataSet.InhoadonDichVuDataTable dtdv = new QuanLyksDataSet.InhoadonDichVuDataTable();
                 QuanLyksDataSet.InhoadonPhongDataTable dtp = new QuanLyksDataSet.InhoadonPhongDataTable();
-                foreach (InHoaDonDichVuDTO hddv in listdv)
-                {
-                    dtdv.Rows.Add(hddv.Maphieuthue, hddv.Tendichvu, hddv.Gia, hddv.Donvitinh, hddv.Soluong, hddv.MaPhong, hddv.Mahoadon, hddv.Ngay);
-                }
-                foreach (InHoaDonPhongDTO hdp in listp)
-                {
-                    dtp.Rows.Add(hdp.Mahoadon, hdp.Tenkhachhang, hdp.Songayo, hdp.CMND, hdp.Diachi, hdp.Coquan, hdp.Sodienthoai, hdp.Email, hdp.Ngayden, hdp.Ngaydi, hdp.Sotiendatcoc, hdp.Gia, hdp.Maphong, hdp.Tennhanvien, hdp.Tongtien);
-                }
-                InHoaDon frmInHoaDon = new InHoaDon();
-                frmInHoaDon.dtdv = dtdv;
-                frmInHoaDon.dtp = dtp;
-                frmInHoaDon.ShowDialog();
+                //foreach (InHoaDonDichVuDTO hddv in listdv)
+                //{
+                    //dtdv.Rows.Add(hddv.Maphieuthue, hddv.Tendichvu, hddv.Gia, hddv.Donvitinh, hddv.Soluong, hddv.MaPhong, hddv.Mahoadon, hddv.Ngay);
+                //}
+                //foreach (InHoaDonPhongDTO hdp in listp)
+                //{
+                    //dtp.Rows.Add(hdp.Mahoadon, hdp.Tenkhachhang, hdp.Songayo, hdp.CMND, hdp.Diachi, hdp.Coquan, hdp.Sodienthoai, hdp.Email, hdp.Ngayden, hdp.Ngaydi, hdp.Sotiendatcoc, hdp.Gia, hdp.Maphong, hdp.Tennhanvien, hdp.Tongtien);
+                //}
+                //InHoaDon frmInHoaDon = new InHoaDon();
+                //frmInHoaDon.dtdv = dtdv;
+                //frmInHoaDon.dtp = dtp;
+                //frmInHoaDon.ShowDialog();
                 //show_MaPT();
             }
             else MessageBox.Show("Thanh toán trước khi in hóa đơn");
