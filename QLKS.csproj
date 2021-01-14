@@ -57,6 +57,12 @@
     <Compile Include="FormDoiMatKhau.Designer.cs">
       <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormhHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormhHoaDon.Designer.cs">
+      <DependentUpon>FormhHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDoiMatKhau.resx">
       <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormhHoaDon.resx">
+      <DependentUpon>FormhHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKhachHang.resx">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
@@ -200,6 +209,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\h31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h32.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

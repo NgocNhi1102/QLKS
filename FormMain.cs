@@ -323,5 +323,12 @@ namespace QLKS
             frmPhieuThuePhong.frmMain = this;
             frmPhieuThuePhong.ShowDialog();
         }
+
+        private void HOADONtoolStripMenuItem18_Click(object sender, EventArgs e)
+        {
+            FormhHoaDon frmhHoaDon = new FormhHoaDon();
+            frmhHoaDon.frmMain = this;
+            frmhHoaDon.ShowDialog();
+        }
     }
 }

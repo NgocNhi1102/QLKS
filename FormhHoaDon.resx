@@ -117,23 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="104002_hotelimage_2323" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\104002_hotelimage_2323.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1ac77ec2104f49bcdefc5d3948ef8e59" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1ac77ec2104f49bcdefc5d3948ef8e59.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="th" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\th.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="h31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\h31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="h3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\h3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="h32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\h32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

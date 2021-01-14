@@ -75,7 +75,7 @@ namespace QLKS
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1117, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1117, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -222,6 +222,7 @@ namespace QLKS
             this.HOADONtoolStripMenuItem18.Name = "HOADONtoolStripMenuItem18";
             this.HOADONtoolStripMenuItem18.Size = new System.Drawing.Size(229, 26);
             this.HOADONtoolStripMenuItem18.Text = "HOÁ ĐƠN";
+            this.HOADONtoolStripMenuItem18.Click += new System.EventHandler(this.HOADONtoolStripMenuItem18_Click);
             // 
             // BAOCAOtoolStripMenuItem5
             // 
