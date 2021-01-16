@@ -53,6 +53,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Hotel.dbml</DependentUpon>
     </Compile>
+    <Compile Include="InHoaDonDichVuDAO.cs" />
+    <Compile Include="InHoaDonPhongDAO.cs" />
     <Compile Include="KhachHangDAO.cs" />
     <Compile Include="KiemTraPhongDAO.cs" />
     <Compile Include="LoaiPhongDAO.cs" />

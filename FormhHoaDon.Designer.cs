@@ -37,7 +37,6 @@ namespace QLKS
             System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Cơ Quan");
             System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Số Điện Thoại ");
             System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Email");
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -73,27 +72,20 @@ namespace QLKS
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label9 = new System.Windows.Forms.Label();
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QLKS.Properties.Resources.h32;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1337, 725);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("UVN Phuong Tay", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(539, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 36);
+            this.label1.Size = new System.Drawing.Size(152, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "HOÁ ĐƠN";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -102,9 +94,9 @@ namespace QLKS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(168, 99);
+            this.label2.Location = new System.Drawing.Point(168, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 20);
+            this.label2.Size = new System.Drawing.Size(134, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã Phiếu Thuê";
             // 
@@ -114,7 +106,7 @@ namespace QLKS
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(168, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.Size = new System.Drawing.Size(113, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Mã Hoá Đơn";
             // 
@@ -124,7 +116,7 @@ namespace QLKS
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(168, 205);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 20);
+            this.label4.Size = new System.Drawing.Size(155, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "Ngày Thanh Toán";
             // 
@@ -134,7 +126,7 @@ namespace QLKS
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(168, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 20);
+            this.label5.Size = new System.Drawing.Size(125, 20);
             this.label5.TabIndex = 1;
             this.label5.Text = "Tiền Đặt Cọc ";
             // 
@@ -144,7 +136,7 @@ namespace QLKS
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(168, 312);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 20);
+            this.label6.Size = new System.Drawing.Size(109, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "Tiền Phòng ";
             // 
@@ -154,7 +146,7 @@ namespace QLKS
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(168, 359);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 20);
+            this.label7.Size = new System.Drawing.Size(118, 20);
             this.label7.TabIndex = 1;
             this.label7.Text = "Tiền Dịch Vụ";
             // 
@@ -164,7 +156,7 @@ namespace QLKS
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(163, 404);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 20);
+            this.label8.Size = new System.Drawing.Size(122, 20);
             this.label8.TabIndex = 1;
             this.label8.Text = "Tiền Phải Trả";
             // 
@@ -174,14 +166,14 @@ namespace QLKS
             this.cmbMaPT.FormattingEnabled = true;
             this.cmbMaPT.Location = new System.Drawing.Point(336, 90);
             this.cmbMaPT.Name = "cmbMaPT";
-            this.cmbMaPT.Size = new System.Drawing.Size(121, 28);
+            this.cmbMaPT.Size = new System.Drawing.Size(155, 28);
             this.cmbMaPT.TabIndex = 2;
             this.cmbMaPT.SelectedIndexChanged += new System.EventHandler(this.cmbMaPT_SelectedIndexChanged);
             // 
             // dtpNgay
             // 
             this.dtpNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgay.Location = new System.Drawing.Point(333, 205);
+            this.dtpNgay.Location = new System.Drawing.Point(339, 200);
             this.dtpNgay.Name = "dtpNgay";
             this.dtpNgay.Size = new System.Drawing.Size(200, 27);
             this.dtpNgay.TabIndex = 3;
@@ -189,9 +181,9 @@ namespace QLKS
             // btnTinhTien
             // 
             this.btnTinhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTinhTien.Location = new System.Drawing.Point(166, 456);
+            this.btnTinhTien.Location = new System.Drawing.Point(50, 497);
             this.btnTinhTien.Name = "btnTinhTien";
-            this.btnTinhTien.Size = new System.Drawing.Size(75, 57);
+            this.btnTinhTien.Size = new System.Drawing.Size(97, 57);
             this.btnTinhTien.TabIndex = 4;
             this.btnTinhTien.Text = "Tính Tiền";
             this.btnTinhTien.UseVisualStyleBackColor = true;
@@ -201,9 +193,9 @@ namespace QLKS
             // btnInhoadon
             // 
             this.btnInhoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInhoadon.Location = new System.Drawing.Point(317, 456);
+            this.btnInhoadon.Location = new System.Drawing.Point(265, 497);
             this.btnInhoadon.Name = "btnInhoadon";
-            this.btnInhoadon.Size = new System.Drawing.Size(75, 57);
+            this.btnInhoadon.Size = new System.Drawing.Size(102, 57);
             this.btnInhoadon.TabIndex = 4;
             this.btnInhoadon.Text = "In Hoá Đơn";
             this.btnInhoadon.UseVisualStyleBackColor = true;
@@ -212,9 +204,9 @@ namespace QLKS
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(458, 456);
+            this.btnThoat.Location = new System.Drawing.Point(458, 497);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 57);
+            this.btnThoat.Size = new System.Drawing.Size(99, 57);
             this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -222,6 +214,9 @@ namespace QLKS
             // 
             // lsvKH
             // 
+            this.lsvKH.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader14,
+            this.columnHeader15});
             this.lsvKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             listViewGroup1.Header = "Khách Hàng";
             listViewGroup1.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -229,10 +224,13 @@ namespace QLKS
             this.lsvKH.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup1});
             this.lsvKH.HideSelection = false;
+            listViewItem1.Group = listViewGroup1;
             listViewItem2.Group = listViewGroup1;
             listViewItem3.Group = listViewGroup1;
             listViewItem4.Group = listViewGroup1;
             listViewItem5.Group = listViewGroup1;
+            listViewItem6.Group = listViewGroup1;
+            listViewItem7.Group = listViewGroup1;
             this.lsvKH.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2,
@@ -241,12 +239,12 @@ namespace QLKS
             listViewItem5,
             listViewItem6,
             listViewItem7});
-            this.lsvKH.Location = new System.Drawing.Point(607, 80);
+            this.lsvKH.Location = new System.Drawing.Point(607, 90);
             this.lsvKH.Name = "lsvKH";
-            this.lsvKH.Size = new System.Drawing.Size(651, 157);
+            this.lsvKH.Size = new System.Drawing.Size(651, 232);
             this.lsvKH.TabIndex = 5;
             this.lsvKH.UseCompatibleStateImageBehavior = false;
-            this.lsvKH.View = System.Windows.Forms.View.List;
+            this.lsvKH.View = System.Windows.Forms.View.Details;
             // 
             // lsvPhong
             // 
@@ -259,7 +257,7 @@ namespace QLKS
             this.columnHeader6});
             this.lsvPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvPhong.HideSelection = false;
-            this.lsvPhong.Location = new System.Drawing.Point(607, 290);
+            this.lsvPhong.Location = new System.Drawing.Point(607, 328);
             this.lsvPhong.Name = "lsvPhong";
             this.lsvPhong.Size = new System.Drawing.Size(651, 184);
             this.lsvPhong.TabIndex = 5;
@@ -308,7 +306,7 @@ namespace QLKS
             // labTDC
             // 
             this.labTDC.AutoSize = true;
-            this.labTDC.Location = new System.Drawing.Point(336, 261);
+            this.labTDC.Location = new System.Drawing.Point(336, 264);
             this.labTDC.Name = "labTDC";
             this.labTDC.Size = new System.Drawing.Size(46, 17);
             this.labTDC.TabIndex = 6;
@@ -317,7 +315,7 @@ namespace QLKS
             // labTP
             // 
             this.labTP.AutoSize = true;
-            this.labTP.Location = new System.Drawing.Point(336, 312);
+            this.labTP.Location = new System.Drawing.Point(336, 315);
             this.labTP.Name = "labTP";
             this.labTP.Size = new System.Drawing.Size(46, 17);
             this.labTP.TabIndex = 6;
@@ -326,7 +324,7 @@ namespace QLKS
             // labTDV
             // 
             this.labTDV.AutoSize = true;
-            this.labTDV.Location = new System.Drawing.Point(336, 350);
+            this.labTDV.Location = new System.Drawing.Point(336, 362);
             this.labTDV.Name = "labTDV";
             this.labTDV.Size = new System.Drawing.Size(46, 17);
             this.labTDV.TabIndex = 6;
@@ -335,7 +333,7 @@ namespace QLKS
             // labTPT
             // 
             this.labTPT.AutoSize = true;
-            this.labTPT.Location = new System.Drawing.Point(336, 404);
+            this.labTPT.Location = new System.Drawing.Point(336, 407);
             this.labTPT.Name = "labTPT";
             this.labTPT.Size = new System.Drawing.Size(46, 17);
             this.labTPT.TabIndex = 6;
@@ -398,14 +396,34 @@ namespace QLKS
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("UVN Phuong Tay", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
             this.label9.Location = new System.Drawing.Point(488, 7);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(195, 53);
+            this.label9.Size = new System.Drawing.Size(222, 46);
             this.label9.TabIndex = 1;
             this.label9.Text = "TÍNH TIỀN";
             this.label9.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "TT";
+            this.columnHeader14.Width = 238;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "GT";
+            this.columnHeader15.Width = 334;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QLKS.Properties.Resources.h32;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1337, 725);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FormhHoaDon
             // 
@@ -482,5 +500,7 @@ namespace QLKS
         private System.Windows.Forms.ColumnHeader columnHeader12;
         private System.Windows.Forms.ColumnHeader columnHeader13;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
     }
 }
