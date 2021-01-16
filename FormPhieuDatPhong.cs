@@ -16,7 +16,7 @@ namespace QLKS
     public partial class FormPhieuDatPhong : Form
     {
        
-        //HotelDataContext hotel = new HotelDataContext();
+      
         public double tongtien;
         public FormPhieuThuePhong frmPhieuThuePhong;
         public FormKhachHang frmKH;
@@ -75,7 +75,6 @@ namespace QLKS
 
                 for (int i = 0; i < lsvDSPhieuDatPhong.Items.Count; i++)
                 {
-                    //MessageBox.Show(lsvDSPhieuDatPhong.Items[i].SubItems[0].Text);
                     if (lsvDSPhieuDatPhong.Items[i].SubItems[0].Text == maphieudatT)
                     {
                         lsvDSPhieuDatPhong.Items[i].Selected = true;
@@ -469,7 +468,7 @@ namespace QLKS
 
                 for (int i = 0; i < lsvViewPhong.Items.Count; i++)
                 {
-                    //MessageBox.Show(i.ToString());
+                   
                     ctdpBUS = new ChiTietDatPhongBUS();
                     ctdpDTO = new ChiTietDatPhongDTO();
                     ctdpDTO.Maphieudat = pdpDTO.Maphieudat;
@@ -492,10 +491,7 @@ namespace QLKS
                 MessageBox.Show("Không tạo được!");
                 labMaPD.Text = "PDP00" + newid();
             }
-            ///MessageBox.Show("OK");
-
-            //show_lsvPDP();
-            //showCmbKH();
+          
             lsvTimPhong.Items.Clear();
             lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = "";
             lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = "";
@@ -540,7 +536,7 @@ namespace QLKS
 
                     for (int i = 0; i < lsvViewPhong.Items.Count; i++)
                     {
-                        //MessageBox.Show(i.ToString());
+                       
                         ctdpBUS = new ChiTietDatPhongBUS();
                         ctdpDTO = new ChiTietDatPhongDTO();
                         ctdpDTO.Maphieudat = pdpDTO.Maphieudat;
@@ -648,7 +644,7 @@ namespace QLKS
                     frmPhieuThuePhong = new FormPhieuThuePhong();
                     frmPhieuThuePhong.frmPhieuDatPhong = this;
                     frmPhieuThuePhong.frmMain = frmMain;
-                    //MessageBox.Show(maloai);
+                   
                     frmPhieuThuePhong.maphieudat = maphieudat;
                     frmPhieuThuePhong.ShowDialog();
                     chang = false;
@@ -703,7 +699,7 @@ namespace QLKS
         //-------------chi tiết--------
         private void cmbKhachHang_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //lsvDSPhieuDatPhong.SelectedItems.Clear();
+           
             chang = false;
             txtSonguoi.Clear();
             txtTiencoc.Clear();
@@ -751,7 +747,7 @@ namespace QLKS
         private void dtpNgayden_ValueChanged(object sender, EventArgs e)
         {
             if (lsvChiTiet.Groups[1].Items[0].SubItems[1].Text != "")
-                //if (((chang == true && Nochangden == true) || Nochangdi == false) && tabControl1.SelectedTab == tabPage1)
+               
                 if ((chang == true && dtpNgayden.Value != DateTime.Parse(lsvChiTiet.Groups[1].Items[0].SubItems[1].Text) && tabControl1.SelectedTab == tabPage1 && lsvViewPhong.Items.Count > 0) || (Nochangden == true && dtpNgayden.Value != DateTime.Parse(lsvChiTiet.Groups[1].Items[0].SubItems[1].Text) && tabControl1.SelectedTab == tabPage1 && lsvViewPhong.Items.Count > 0))
                 {
                     if (MessageBox.Show("Bạn có chắc thực hiện việc sửa phòng này!", "Chú ý!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
@@ -765,24 +761,22 @@ namespace QLKS
                         Nochangden = true;
                         chang = false;
                         dtpNgayden.Value = DateTime.Parse(lsvChiTiet.Groups[1].Items[0].SubItems[1].Text);
-                        //lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = dtpNgayden.Value.ToShortDateString();
+                       
                         return;
                     }
                 }
 
             if (dtpNgaydi.Value < dtpNgayden.Value)
             {
-                //MessageBox.Show("Ngày đến không được lớn hơn ngày đi!");
-                //lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = "";
-                //lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = "";
+               
                 dtpNgaydi.Value = dtpNgayden.Value;
-                // return;
+                
             }
-            //dtpNgaydi.Value = dtpNgayden.Value;
+           
             lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = (dtpNgayden.Value.ToShortDateString());
             lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = (dtpNgaydi.Value.ToShortDateString());
             lsvTimPhong.Items.Clear();
-            //lsvViewPhong.Items.Clear();
+           
         }
 
         private void dtpNgaydi_ValueChanged(object sender, EventArgs e)
@@ -801,8 +795,7 @@ namespace QLKS
                         Nochangdi = true;
                         chang = false;
                         dtpNgaydi.Value = DateTime.Parse(lsvChiTiet.Groups[1].Items[1].SubItems[1].Text);
-                        //dtpNgaydi.Value = ngaydi;
-                        //lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = dtpNgaydi.Value.ToShortDateString();
+                       
                         return;
                     }
                 }
@@ -818,12 +811,12 @@ namespace QLKS
             lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = (dtpNgayden.Value.ToShortDateString());
             lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = (dtpNgaydi.Value.ToShortDateString());
             lsvTimPhong.Items.Clear();
-            //lsvViewPhong.Items.Clear();
+           
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            //string fe;
+           
             lsvTimPhong.Items.Clear();
             lsvViewPhong.Items.Clear();
             if (lsvChiTiet.Groups[1].Items[0].SubItems[1].Text == "")
@@ -838,7 +831,7 @@ namespace QLKS
             IList<PhongDTO> listphong = pBUS.getListPhongAll();
             foreach (PhongDTO p in listphong)
             {
-                //MessageBox.Show(p.Maphong);
+               
                 if (kiemtraphong(p.Maphong, ngayden, ngaydi))
                 {
                     int i = lsvTimPhong.Items.Count;
@@ -925,7 +918,7 @@ namespace QLKS
             {
                 songuoi += int.Parse(lsvViewPhong.Items[i].SubItems[2].Text);
             }
-            //MessageBox.Show("songuoi" + songuoi.ToString() + "            " + txtSonguoi.Text);
+           
             if (songuoi < int.Parse(txtSonguoi.Text))
             {
                 return false;
@@ -964,40 +957,7 @@ namespace QLKS
             show_lsvPDP();
         }
 
-        private void lsvTimPhong_ItemChecked(object sender, ItemCheckedEventArgs e)
-        {
-            lsvViewPhong.Items.Clear();
-            //Cập nhật lại cũ
-            ctdpBUS = new ChiTietDatPhongBUS();
-            IList<ChiTietDatPhongDTO> listctdp = ctdpBUS.getChiTietDatPhongByID(labMaPD.Text);
-            if (listctdp != null)
-                foreach (ChiTietDatPhongDTO ctdp in listctdp)
-                {
-                    int i = lsvViewPhong.Items.Count;
-                    lsvViewPhong.Items.Add(ctdp.Maphong);
-                    pBUS = new PhongBUS();
-                    IList<PhongDTO> listp = pBUS.getLikePhongByID(ctdp.Maphong);
-                    foreach (PhongDTO p in listp)
-                    {
-                        lpBUS = new LoaiPhongBUS();
-                        LoaiPhongDTO listlp = lpBUS.getLoaiPhongByID(p.Maloai);
-                        lsvViewPhong.Items[i].SubItems.Add(listlp.Maloai);
-                        lsvViewPhong.Items[i].SubItems.Add(listlp.Songuoi.ToString());
-                        lsvViewPhong.Items[i].SubItems.Add(listlp.Gia.ToString("0,0"));
-                    }
-                }
-            
-            ListView.CheckedListViewItemCollection checkedItems = lsvTimPhong.CheckedItems;
-            foreach (ListViewItem item in checkedItems)
-            {
-                int i = lsvViewPhong.Items.Count;
-                lsvViewPhong.Items.Add(item.SubItems[0].Text);
-                lsvViewPhong.Items[i].SubItems.Add(item.SubItems[1].Text);
-                lsvViewPhong.Items[i].SubItems.Add(item.SubItems[2].Text);
-                lsvViewPhong.Items[i].SubItems.Add(item.SubItems[3].Text);
-            }
-        }
-
+     
         private void tabControl1_Click(object sender, EventArgs e)
         {
             show_lsvPDP();
@@ -1043,7 +1003,7 @@ namespace QLKS
                     frmPhieuThuePhong = new FormPhieuThuePhong();
                     frmPhieuThuePhong.frmPhieuDatPhong = this;
                     frmPhieuThuePhong.frmMain = frmMain;
-                    //MessageBox.Show(maloai);
+                  
                     frmPhieuThuePhong.maphieudat = maphieudat;
                     frmPhieuThuePhong.ShowDialog();
                     chang = false;
@@ -1214,20 +1174,19 @@ namespace QLKS
             }
 
             pdpBUS = new PhieuDatPhongBUS();
-            //dtpNgayden.Value = DateTime.Now;
-            //dtpNgaydi.Value = DateTime.Now;
+           
             IList<PhieuDatPhongDTO> listpdp = pdpBUS.getLikePhieuDatPhongByID(lsvDSPhieuDatPhong.SelectedItems[0].SubItems[0].Text);
             foreach (PhieuDatPhongDTO pdp in listpdp)
             {
                 cmbKhachHang.SelectedValue = pdp.Makhachhang;
-                //MessageBox.Show(r["makhachhang"].ToString());
+               
                 labMaPD.Text = pdp.Maphieudat;
                 lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = pdp.Ngayden.ToShortDateString();
                 lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = pdp.Ngaydi.ToShortDateString();
-                //MessageBox.Show(pdp.Ngayden.ToShortDateString());
+               
                 dtpNgayden.Value = pdp.Ngayden;
                 dtpNgaydi.Value = pdp.Ngaydi;
-                //MessageBox.Show(pdp.Ngayden.ToShortDateString());
+               
                 txtTiencoc.Text = pdp.Sotiendatcoc.ToString("0,0");
                 txtSonguoi.Text = pdp.Songuoi.ToString();
                 ngayden = pdp.Ngayden;
@@ -1278,6 +1237,42 @@ namespace QLKS
         private void txtTiencoc_KeyPress(object sender, KeyPressEventArgs e)
         {
             frmMain.KoNhapChu(sender, e);
+        }
+
+        private void lsvDSPhieuDatPhong_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lsvTimPhong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lsvViewPhong.Items.Clear();
+            //Cập nhật lại cũ
+            ctdpBUS = new ChiTietDatPhongBUS();
+            IList<ChiTietDatPhongDTO> listctdp = ctdpBUS.getChiTietDatPhongByID(labMaPD.Text);
+
+            if (listctdp != null)
+                foreach (ChiTietDatPhongDTO ctdp in listctdp)
+                {
+                    lsvViewPhong.Items.Add(ctdp.Maphong);
+                    pBUS = new PhongBUS();
+                    IList<PhongDTO> listp = pBUS.getLikePhongByID(ctdp.Maphong);
+                    foreach (PhongDTO p in listp)
+                    {
+                        lpBUS = new LoaiPhongBUS();
+                        LoaiPhongDTO listlp = lpBUS.getLoaiPhongByID(p.Maloai);
+                        lsvViewPhong.Items[lsvViewPhong.Items.Count].SubItems.Add(listlp.Maloai);
+                        lsvViewPhong.Items[lsvViewPhong.Items.Count].SubItems.Add(listlp.Songuoi.ToString());
+                        lsvViewPhong.Items[lsvViewPhong.Items.Count].SubItems.Add(listlp.Gia.ToString("0,0"));
+                    }
+                }
+
+            ListViewItem selectedItem = lsvTimPhong.SelectedItems[0];
+            int i = lsvViewPhong.Items.Count;
+            lsvViewPhong.Items.Add(selectedItem.SubItems[0].Text);
+            lsvViewPhong.Items[i].SubItems.Add(selectedItem.SubItems[1].Text);
+            lsvViewPhong.Items[i].SubItems.Add(selectedItem.SubItems[2].Text);
+            lsvViewPhong.Items[i].SubItems.Add(selectedItem.SubItems[3].Text);
         }
     }
     }
